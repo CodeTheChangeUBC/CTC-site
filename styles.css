@@ -37,15 +37,22 @@ nav {
    height:auto;
 }
 
-#splash {
-   margin: 0, 20px;
+#splash, #projectBanner {
+   margin: 0px;
    text-align: center;
    display: block;
-   background-image:url("images/ubcmainmall.jpg");
    width: 100%;
    height:350px;
    color: white;
 
+}
+#splash {
+      background-image:url("images/ubcmainmall_edit.jpg");
+}
+
+#projectBanner {
+   background-image: url("images/ubcmainmall_edit.jpg");
+   max-height: 200px;
 }
 
 #about {
@@ -60,3 +67,29 @@ nav {
 #splashHeader {
    padding-top:100px;
 }
+
+.pageButton {
+   color: white;
+   width: 20%;
+   text-align: center;
+   margin: auto;
+   padding: 8px;
+   background-color: rgba(50, 200 , 200, 0.8);
+   outline: 1px solid white;
+   font-size: 1.2em;
+}
+
+.pageButton:hover {
+   background-color:lightblue;
+   outline: 1px solid grey;
+}
+
+h2 {
+   padding-top: 20px;
+}
+
+#contactBanner {
+   background-color:white;
+   padding: 50px;
+}
+
