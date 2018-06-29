@@ -18,8 +18,15 @@ nav {
    border-bottom: 2px solid gray;
 }
 
+.navlink:hover {
+   text-decoration: none;
+   color:white;
+   background-color: rgba(70,160,230,0.5);
+}
+
 .navlink, #navheader{
    color:gray;
+   padding: 5px 15px;
 }
 
 
