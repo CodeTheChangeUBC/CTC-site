@@ -43,9 +43,21 @@ h6 {
   letter-spacing: 0.75px;
 }
 
+// navbar
+@include media-breakpoint-down(sm) {
+  .navbar-collapse {
+    position: fixed;
+    left: 0;
+    top: 76px;
+    width: 100%;
+    background-color: white;
+  }
+}
+
 // header image
 .header-image {
   height: 750px;
+  margin-top: -76px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)), url("../images/ubcmainmall.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
