@@ -1,3 +1,26 @@
+// Navbar
+@include media-breakpoint-down(sm) {
+  .navbar {
+    .navbar-brand,
+    .navbar-toggler {
+      z-index: 9999;
+    }
+    .navbar-collapse {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 9998;
+      background-color: white;
+    }
+    ul {
+      height: 100vh;
+      border-top: 1px solid $gray-100;
+      margin-top: 76px;
+    }
+  }
+}
+
 // Hamburger menu
 button {
   &:focus {
