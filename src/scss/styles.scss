@@ -45,12 +45,26 @@ h6 {
 
 // navbar
 @include media-breakpoint-down(sm) {
-  .navbar-collapse {
-    position: fixed;
-    left: 0;
-    top: 76px;
-    width: 100%;
-    background-color: white;
+  .navbar {
+    .navbar-brand,
+    .navbar-toggler {
+      z-index: 9999;
+    }
+
+    .navbar-collapse {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 9998;
+      background-color: white;
+    }
+
+    ul {
+      height: 100vh;
+      border-top: 1px solid $gray-100;
+      margin-top: 76px;
+    }
   }
 }
 

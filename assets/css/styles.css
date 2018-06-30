@@ -6554,12 +6554,20 @@ h6 {
   letter-spacing: 0.75px; }
 
 @media (max-width: 767.98px) {
-  .navbar-collapse {
+  .navbar .navbar-brand,
+  .navbar .navbar-toggler {
+    z-index: 9999; }
+  .navbar .navbar-collapse {
     position: fixed;
     left: 0;
-    top: 76px;
-    width: 100%;
-    background-color: white; } }
+    right: 0;
+    top: 0;
+    z-index: 9998;
+    background-color: white; }
+  .navbar ul {
+    height: 100vh;
+    border-top: 1px solid #D9DADD;
+    margin-top: 76px; } }
 .header-image {
   height: 750px;
   margin-top: -76px;
