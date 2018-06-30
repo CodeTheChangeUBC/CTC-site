@@ -71,3 +71,32 @@ footer {
   height: 150px;
   line-height: 150px;
 }
+
+#projectBanner{
+   background-color:black;
+   color:white;
+   text-align:center;
+}
+
+#joinBanner {
+   text-align: center;
+}
+.pageButton {
+   color:white;
+   background-color: $secondary;
+}
+
+#volButton {
+   background-image: url(../../assets/images/ubcmainmall_edit.jpg);
+   padding: 25px;
+}
+
+#partnerButton {
+   background-image: url(../../assets/images/ubcmainmall.jpg);
+   padding: 25px;
+}
+
+
+
+
+
