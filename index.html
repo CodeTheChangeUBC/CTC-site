@@ -1,63 +1,102 @@
 <!doctype HTML> 
 <html lang="en"> 
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <!--BootStrap CSS -->
-   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   <!--Local stylesheet -->
-   <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
 
-   <title>Home | Code The Change UBC</title>
+  <title>Home | Code The Change UBC</title>
 </head>
 
 <body>
-   <nav role="navigation">
-      <ul>
-         <li><a href="index.html" id="navheader"><img id="navheader-logo" src="images/logo.gif" title="logo"></a></li>
-         <li><a class="navlink" href="projects.html">Projects</a></li>
-         <li><a class="navlink" href="team.html">Team</a></li>
-         <li><a class="navlink" href="contact.html">Contact</a></li>
-      </ul>
-   </nav>
+  <nav role="navigation" class="navbar navbar-expand-lg navbar-light bg-white-50 fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="dist/images/logo.gif" width="auto" height="50" alt="ctc_logo">
+      </a>
+      <button id="nav-icon4" class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-   <main>
-      <section>
-         <div id="splash">
-            <h1 id="splashHeader"> Code The Change UBC</h1>
-            <p>Driving social change with technology.</p>
-         </div>
-      </section>
-      <div id="about">
-         <h2>About Us</h2>
-         <p>Code The Change UBC builds open-source software solutions to enhance the effectiveness of non-profit organizations. We believe in the unification of technology and philanthropy. Our passionate and diverse team proudly enables incredible organizations to acheive their altruistic goals.</p>
-         <p> Code the Change began in 2009 as a student organizations at Stanford University. Since then, multiple chapters across North America, including CTC UBC, have developed to carry on the mission.
-         </p>
-
-<!--
-         <div id="prospectiveInfo">
-            <h3>Organizations</h3>
-            <p>We love to hear from organizations looking to overcome an obstacle. Please do not hesitate to contact us to discuss how we can help.</p>
-            <h3>Students</h3>
-            <p>Students form the backbone of our organization. We welcome students with a wide variety of skills. If you would like to participate, please reach out to us. We look forward to hearing your ideas.</p>
-         </div>
--->
+  <main>
+    <header class="header-image">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col text-center text-white">
+              <h1>Code The Change UBC</h1>
+              <p>Driving social change with technology.</p>
+            </div>
+          </div>
+        </div>
+    </header>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>About Us</h2>
+            <p>Code The Change UBC builds open-source software solutions to enhance the effectiveness of non-profit organizations. We believe in the unification of technology and philanthropy. Our passionate and diverse team proudly enables incredible organizations to acheive their altruistic goals.</p>
+            <p>Code the Change began in 2009 as a student organizations at Stanford University. Since then, multiple chapters across North America, including CTC UBC, have developed to carry on the mission.</p>
+            <!--
+            <div id="prospectiveInfo">
+              <h3>Organizations</h3>
+              <p>We love to hear from organizations looking to overcome an obstacle. Please do not hesitate to contact us to discuss how we can help.</p>
+              <h3>Students</h3>
+              <p>Students form the backbone of our organization. We welcome students with a wide variety of skills. If you would like to participate, please reach out to us. We look forward to hearing your ideas.</p>
+            </div>
+            -->
+          </div>
+        </div>
       </div>
-      
-      <div id="projectBanner">
-         <h2>See what we've been working on</h2>
-         <a  href="projects.html"><h5 class="pageButton">Projects</h5></a>
+    </section>
+    
+    <section id="projectBanner">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>See what we've been working on</h2>
+            <a href="projects.html">
+              <h5 class="pageButton">Projects</h5>
+            </a>
+          </div>
+        </div>
       </div>
-      
-      <div id="contactBanner">
-         <a href="contact.html"><h5 class="pageButton">Contact Us</h5></a>
+    </section>
+    
+    <section id="contactBanner">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a href="contact.html">
+              <h5 class="pageButton">Contact Us</h5>
+            </a>
+          </div>
+        </div>
       </div>
-      
-   </main>
-   <footer role="contentinfo"> 
-      
-   </footer>
+    </section>
+  </main>
+  
+  <footer role="contentinfo"> 
+    
+  </footer>
   
    <!--BootStrap JS Scripts -->
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
