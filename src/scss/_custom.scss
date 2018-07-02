@@ -75,3 +75,10 @@ $link-color:                $primary !default;
 $link-decoration:           none !default;
 $link-hover-color:          darken($link-color, 15%) !default;
 $link-hover-decoration:     underline !default;
+
+// Navbar
+$navbar-light-color:                rgba($gray-900, 0.7);
+$navbar-light-hover-color:          rgba($secondary, 1);
+$navbar-light-active-color:         rgba($secondary, 1);
+$navbar-light-disabled-color:       rgba($gray-900, .4);
+$navbar-light-toggler-border-color: rgba($gray-700, 1);
