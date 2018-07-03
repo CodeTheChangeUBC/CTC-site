@@ -17,9 +17,9 @@
         <img src="assets/images/logo.gif" width="auto" height="50" alt="ctc_logo">
       </a>
          <button id="nav-icon4" class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
       </button>
 
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,23 +44,18 @@
             <div class="row h-100 align-items-center">
                <div class="col text-center text-white">
                   <h1 class="display-4">Work With Us</h1>
-                  <section id="joinBanner">
-
-                     <div class="container-fluid">
-                        <div class="row">
-                           <div id="partnerButton" class="col-12 col-md-6">
-                             <a href="#partnerInfo">
-                              <h5 class="pageButton">Partner</h5>
-                              </a>
-                           </div>
-                           <div id="volButton" class="col-12 col-md-6">
-                              <a href=#volunteerInfo>
-                                 <h5 class="pageButton">Volunteer</h5>
-                              </a>
-                           </div>
+                  <div class="container">
+                     <div class="row m-0">
+                        <div class="col-12 p-0">
+                           <a href="work.html#partnerInfo" class="btn btn-primary text-white mb-2">
+                              <h5 class="m-0">Become a Partner</h5>
+                           </a>
+                           <a href="work.html#volunteerInfo" class="btn btn-secondary text-white mb-2">
+                              <h5 class="m-0">Become a Volunteer</h5>
+                           </a>
                         </div>
                      </div>
-                  </section>
+                  </div>
                </div>
             </div>
          </div>
@@ -68,81 +63,131 @@
 
       <section id="partnerInfo">
          <div class="container">
-            <h3>Partner With Us</h3>
+            <h2 class="mb-4 text-secondary">Partner With Us</h2>
             <p>
                We believe that software isn't a way to solve social issues in and of itself. Rather, its power is in supporting organizations who already have the relevant expertise in a given area.
             </p>
             <p>
                We love to hear from non-profit organizations looking to overcome any sort of obstacle. Please do not hesitate to contact us to discuss how we can help. We look forward to meeting you!
             </p>
-            <h5>Organizational Partner Form</h5>
+            <h4 class="mb-2 text-secondary">Organizational Partner Form</h4>
             <form>
-               <ol>
-                  <li class="formQ"><b>MISSION:</b> Please provide a brief description of your organization’s mission and goals</li>
-                  <input type="text">
-                  <li class="formQ"><b>CHALLENGE:</b> Please help us understand the issue(s) that you are facing</li>
-                  <input type="text">
-                  <li class="formQ"><b>IDEAS:</b> Please share any ideas you may have about what you need and how you think we can help</li>
-                  <input type="text">
-                  <li class="formQ"><b>CONTACT:</b> Name of contact person, phone number and/or email, best time to reach you, website of organization.</li>
-                  Name: <input type="text"><br> Phone Number: <input type="text"><br> Email: <input type="text"><br> Notes: <input type="text"><br>
-                  <br>
-                  <button type="button" class="btn btn-primary">Submit Form </button>
-               </ol>
+               <div class="form-group">
+                  <label for="mission">1. <b>MISSION:</b> Please provide a brief description of your organization’s mission and goals.</label>
+                  <textarea class="form-control" id="mission" rows="2" required></textarea>
+               </div>
+               <div class="form-group">
+                  <label for="challenge">2. <b>CHALLENGE:</b> Please help us understand the issue(s) that you are facing.</label>
+                  <textarea class="form-control" id="challenge" rows="2" required></textarea>
+               </div>
+               <div class="form-group">
+                  <label for="ideas">3. <b>IDEAS:</b> Please share any ideas you may have about what you need and how you think we can help.</label>
+                  <textarea class="form-control" id="ideas" rows="2" required></textarea>
+               </div>
+               <div class="form-row">
+                  <label for="contact">4. <b>CONTACT:</b> Please provide basic contact information so we can get back to you as quickly as possible.</label>
+                  <div class="col-12 col-md-6 pb-2">
+                     <label for="name">Name</label>
+                     <input type="text" id="name" class="form-control" placeholder="Ex. John Doe" required>
+                  </div>
+                  <div class="col-12 col-md-6 pb-2">
+                     <label for="email">Email Address</label>
+                     <input type="email" id="email" class="form-control" placeholder="Ex. user@example.com" required>
+                  </div>
+                  <div class="col-12 col-md-6 pb-2"> 
+                     <label for="phone">Phone Number</label>
+                     <input type="tel" id="phone" class="form-control" placeholder="Ex. 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                  </div>
+                  <div class="col-12 col-md-6 pb-2"> 
+                     <label for="notes">Notes</label>
+                     <input type="text" id="notes" class="form-control" placeholder="Ex. Best time to reach you, website, etc.">
+                  </div>
+               </div>
+               <button type="submit" class="btn btn-primary text-white mt-2 mb-4 btn-block">
+                  <h6 class="m-0">Submit</h6>
+               </button>
             </form>
             <h6>Thank you for reaching out to us. We look forward to speaking with you soon.</h6>
          </div>
-         <hr>
-         <section id="volunteerInfo">
-            <div class="container">
-               <h3>Students</h3>
-               <p>
-                  We believe that software isn't a way to solve social issues in and of itself. Rather, its power is in supporting organizations who already have the relevant expertise in a given area.
-               </p>
-               <p>
-
-                  Students form the backbone of our organization. By helping students use their skills to solve current and substantial problems we hope to empower and encourage the next generation of philanthropists. Our goal is to show students that their work can immediately have a significant social impact.
-               </p>
-               <p>
-                  We welcome students with a wide variety of skills and faculties. We graciously accept applications all year round. Twice a year (September and January), we will be starting a new set of projects which are expected to take approximately one school term.
-               </p>
-               <p>
-                  If you would like to participate or if you have any questions at all, please do not hesitate to reach out to us. We look forward to hearing your ideas!
-               </p>
-               <h5>Volunteer Form</h5>
-               <form>
-                  <ol>
-                     <li class="formQ">What causes are you passionate about?</li>
-                     <input type="text">
-                     <li class="formQ">What is your area of study and what year are you in?</li>
-                     <input type="text">
-                     <li class="formQ">Please list/describe any relevant technical skills.</li>
-                     <input type="text">
-                     <li class="formQ">Please list/describe any relevant non-technical skills.</li>
-                     <input type="text">
-                     <li class="formQ">How much time are you able to commit per week on average?</li>
-                     <input type="text">
-                     <br>
-                     <br>
-                     <button type="button" class="btn btn-primary">Submit Form </button>
-                  </ol>
-                  <h6>Thank you for reaching out to us. We look forward to speaking with you soon.</h6>
-               </form>
-               <hr>
-            </div>
-         </section>
       </section>
-
-
-
-
+      <hr>
+      <section id="volunteerInfo">
+         <div class="container">
+            <h2 class="mb-4 text-secondary">Volunteer With Us</h2>
+            <p>
+               We believe that software isn't a way to solve social issues in and of itself. Rather, its power is in supporting organizations who already have the relevant expertise in a given area.
+            </p>
+            <p>
+               Students form the backbone of our organization. By helping students use their skills to solve current and substantial problems we hope to empower and encourage the next generation of philanthropists. Our goal is to show students that their work can immediately have a significant social impact.
+            </p>
+            <p>
+               We welcome students with a wide variety of skills and faculties. We graciously accept applications all year round. Twice a year (September and January), we will be starting a new set of projects which are expected to take approximately one school term.
+            </p>
+            <p>
+               If you would like to participate or if you have any questions at all, please do not hesitate to reach out to us. We look forward to hearing your ideas!
+            </p>
+            <h4 class="mb-2 text-secondary">Volunteer Form</h4>
+            <form>
+               <div class="form-group">
+                  <label for="causes">1. What causes are you passionate about?</label>
+                  <textarea class="form-control" id="causes" rows="2" required></textarea>
+               </div>
+               <div class="form-group">
+                  <label for="study">2. What is your area of study and what year are you in?</label>
+                  <textarea class="form-control" id="study" rows="2" required></textarea>
+               </div>
+               <div class="form-group">
+                  <label for="technical">3. Please list/describe any relevant technical skills.</label>
+                  <textarea class="form-control" id="technical" rows="2" required></textarea>
+               </div>
+               <div class="form-group">
+                  <label for="non-technical">4. Please list/describe any relevant non-technical skills.</label>
+                  <textarea class="form-control" id="non-technical" rows="2" required></textarea>
+               </div>
+               <div class="form-group">
+                  <label for="time">5. How much time are you able to commit per week on average?</label>
+                  <textarea class="form-control" id="time" rows="2" required></textarea>
+               </div>
+               <div class="form-row">
+                  <label for="contact">6. Please provide basic contact information so we can get back to you as quickly as possible.</label>
+                  <div class="col-12 col-md-6 pb-2">
+                     <label for="name">Name</label>
+                     <input type="text" id="name" class="form-control" placeholder="Ex. John Doe" required>
+                  </div>
+                  <div class="col-12 col-md-6 pb-2">
+                     <label for="email">Email Address</label>
+                     <input type="email" id="email" class="form-control" placeholder="Ex. user@example.com" required>
+                  </div>
+                  <div class="col-12 col-md-6 pb-2"> 
+                     <label for="phone">Phone Number</label>
+                     <input type="tel" id="phone" class="form-control" placeholder="Ex. 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                  </div>
+                  <div class="col-12 col-md-6 pb-2"> 
+                     <label for="notes">Notes</label>
+                     <input type="text" id="notes" class="form-control" placeholder="Ex. Best time to reach you, website, github, etc.">
+                  </div>
+               </div>
+               <button type="submit" class="btn btn-secondary text-white mt-2 mb-4 btn-block">
+                  <h6 class="m-0">Submit</h6>
+               </button>
+               <h6>Thank you for reaching out to us. We look forward to speaking with you soon.</h6>
+            </form>
+         </div>
+      </section>
    </main>
 
    <footer role="contentinfo" class="footer bg-light d-flex align-items-center">
       <div class="container">
          <div class="row">
-            <div class="col">
-               <h6 class="text-center text-muted">&copy; Code the Change UBC 2018</h6>
+            <div class="col-12">
+               <p class="text-center text-muted mb-1">
+                  <a class="text-muted" href="https://github.com/CodeTheChangeUBC">GitHub</a> |
+                  <a class="text-muted" href="https://www.linkedin.com/company-beta/18145418/">LinkedIn</a> |
+                  <a class="text-muted" href="https://www.facebook.com/codethechangeubc/">Facebook</a>
+               </p>
+            </div>
+            <div class="col-12">
+               <p class="text-center text-muted m-0 small">&copy; Code the Change UBC 2018</p>
             </div>
          </div>
       </div>
