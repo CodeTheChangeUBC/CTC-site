@@ -6617,4 +6617,11 @@ section {
 #partnerInfo {
   margin-top: 25px; }
 
+.projectImage {
+  max-height: 100px;
+  width: auto; }
+
+.projectInfo {
+  border: 2px solid grey; }
+
 /*# sourceMappingURL=styles.css.map */
