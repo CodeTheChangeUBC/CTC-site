@@ -51,7 +51,6 @@ h6, .h6 {
 button, .btn {
   &:focus {
     outline: 0;
-    box-shadow: none !important;
   }
 }
 
@@ -90,7 +89,7 @@ section {
 }
 
 .secondary-header-image {
-  height: 400px;
+  height: 300px;
   margin-top: -76px;
   background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url("../images/ubcmainmall.jpg");
   background-repeat: no-repeat;
@@ -100,29 +99,6 @@ section {
 }
 
 // home page
-
-// #joinBanner {
-//    text-align: center;
-//    height:200px;
-// }
-.pageButton {
-   color:white;
-   background-color: $secondary;
-}
-
-#volButton {
-   padding: 15px;
-}
-
-#partnerButton {
-   padding: 15px;
-}
-
-.secondary-header-image {
-  height: 300px;
-  margin-top: -76px;
-  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url("../images/ubcmainmall.jpg");
-}
 #projectBanner{
   background-image: linear-gradient(rgba($black, 0.15), rgba($black, 0.15)), url("../images/ubcmainmall.jpg");
   background-repeat: no-repeat;
@@ -151,14 +127,16 @@ section {
 .project-container {
   .project-image {
     position: relative;
+    margin: auto;
     width: 100%;
-    background-image: url("../images/placeholder.png");
+    min-width : 220px;
+    max-width: 350px;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    border-radius: 10px;
-    border: 10px solid $light;
+    border-radius: 0.625rem;
+    border: 0.3125rem solid $light;
     box-sizing: border-box;
     overflow: hidden;
     &:before {
@@ -170,9 +148,10 @@ section {
       .project-description {
         transform: translateY(0);
         bottom: 0;
-        background-color: rgba($black, 0.75);
+        background-color: rgba($black, 0.95);
       }
     }
+
     .project-description {
       -webkit-transition: 0.5s ease-in-out;
       -moz-transition: 0.5s ease-in-out;
@@ -184,8 +163,8 @@ section {
       right: 0;
       top: 0;
       transform: translateY(100%);
-      background-color: rgba($black, 0.5);
-      overflow-x: scroll;
+      background-color: rgba($black, 0.75);
+      border-radius: 0.3125rem;
     }
   }
 }
@@ -205,6 +184,7 @@ max-height:30px;
    padding: 0px 4px;
 }
 
+// contacts us page
 #volunteerBanner {
    margin: 25px;
    background-color: #26282B;
@@ -221,6 +201,9 @@ max-height:30px;
       padding:15px;
 }
 
-
+.workBanner {
+   min-height:480px;
+   height: 100vh;
+}
 
 

@@ -6578,8 +6578,7 @@ h6, .h6 {
   letter-spacing: 0.75px; }
 
 button:focus, .btn:focus {
-  outline: 0;
-  box-shadow: none !important; }
+  outline: 0; }
 
 .header-image {
   height: 750px;
@@ -6607,28 +6606,13 @@ section {
   padding: 50px 0px; }
 
 .secondary-header-image {
-  height: 400px;
+  height: 300px;
   margin-top: -76px;
   background-image: linear-gradient(white, rgba(255, 255, 255, 0) 30%), url("../images/ubcmainmall.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
   background-size: cover; }
-
-.pageButton {
-  color: white;
-  background-color: #203864; }
-
-#volButton {
-  padding: 15px; }
-
-#partnerButton {
-  padding: 15px; }
-
-.secondary-header-image {
-  height: 300px;
-  margin-top: -76px;
-  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 30%), url("../images/ubcmainmall.jpg"); }
 
 #projectBanner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/ubcmainmall.jpg");
@@ -6650,14 +6634,16 @@ section {
 
 .project-container .project-image {
   position: relative;
+  margin: auto;
   width: 100%;
-  background-image: url("../images/placeholder.png");
+  min-width: 220px;
+  max-width: 350px;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  border-radius: 10px;
-  border: 10px solid #D9DADD;
+  border-radius: 0.625rem;
+  border: 0.3125rem solid #D9DADD;
   box-sizing: border-box;
   overflow: hidden; }
   .project-container .project-image:before {
@@ -6667,7 +6653,7 @@ section {
   .project-container .project-image:hover .project-description {
     transform: translateY(0);
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.75); }
+    background-color: rgba(0, 0, 0, 0.95); }
   .project-container .project-image .project-description {
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
@@ -6679,8 +6665,8 @@ section {
     right: 0;
     top: 0;
     transform: translateY(100%);
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow-x: scroll; }
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 0.3125rem; }
 
 .gitLink {
   max-height: 30px; }
@@ -6705,5 +6691,9 @@ section {
 
 #contactForm {
   padding: 15px; }
+
+.workBanner {
+  min-height: 480px;
+  height: 100vh; }
 
 /*# sourceMappingURL=styles.css.map */
