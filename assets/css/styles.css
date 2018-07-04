@@ -6624,7 +6624,7 @@ section {
   padding: 15px; }
 
 .secondary-header-image {
-  height: 400px;
+  height: 300px;
   margin-top: -76px;
   background-image: linear-gradient(white, rgba(255, 255, 255, 0) 30%), url("../images/ubcmainmall.jpg");
   background-repeat: no-repeat;
@@ -6656,5 +6656,23 @@ section {
 .headerIcon {
   max-height: 25px;
   padding: 0px 4px; }
+
+#volunteerBanner {
+  margin: 25px;
+  background-color: #26282B;
+  color: white; }
+
+#volPrompt {
+  margin: 15px;
+  font-size-adjust: auto;
+  text-align: center; }
+
+#contactForm {
+  padding: 15px; }
+
+.wall {
+  width: 1px;
+  background-color: black;
+  float: center; }
 
 /*# sourceMappingURL=styles.css.map */
