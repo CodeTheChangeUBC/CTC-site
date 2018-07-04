@@ -6642,4 +6642,11 @@ section {
 .projectInfo {
   border: 2px solid grey; }
 
+@media (max-width: 767.98px) {
+  #joinBanner > .container {
+    max-width: 100%; } }
+
+.gitImage {
+  max-height: 30px; }
+
 /*# sourceMappingURL=styles.css.map */

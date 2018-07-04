@@ -138,3 +138,12 @@ section {
    border: 2px solid grey;
 }
 
+#joinBanner > .container {
+   @include media-breakpoint-down(sm) {
+      max-width: 100%;
+   }
+}
+
+.gitImage {
+max-height:30px;
+}
