@@ -6649,4 +6649,12 @@ section {
 .gitImage {
   max-height: 30px; }
 
+.footerIcon {
+  max-height: 35px;
+  padding: 0px 10px 7px; }
+
+.headerIcon {
+  max-height: 25px;
+  padding: 0px 4px; }
+
 /*# sourceMappingURL=styles.css.map */
