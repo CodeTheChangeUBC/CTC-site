@@ -89,14 +89,17 @@ section {
   padding: 50px 0px;
 }
 
-#projectBanner{
-  background-image: linear-gradient(rgba($black, 0.15), rgba($black, 0.15)), url("../images/ubcmainmall.jpg");
+.secondary-header-image {
+  height: 400px;
+  margin-top: -76px;
+  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url("../images/ubcmainmall.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
   background-size: cover;
 }
 
+// home page
 
 // #joinBanner {
 //    text-align: center;
@@ -119,15 +122,22 @@ section {
   height: 300px;
   margin-top: -76px;
   background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url("../images/ubcmainmall.jpg");
+}
+#projectBanner{
+  background-image: linear-gradient(rgba($black, 0.15), rgba($black, 0.15)), url("../images/ubcmainmall.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
   background-size: cover;
 }
 
-#partnerInfo {
-   margin-top:25px;
+#joinBanner>.container {
+  @include media-breakpoint-down(sm) {
+    max-width: 100%;
+  }
 }
+
+// projects page
 
 .projectImage {
    max-height:100px;
@@ -138,11 +148,48 @@ section {
    border: 2px solid grey;
 }
 
-#joinBanner > .container {
-   @include media-breakpoint-down(sm) {
-      max-width: 100%;
-   }
+.project-container {
+  .project-image {
+    position: relative;
+    width: 100%;
+    background-image: url("../images/placeholder.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    border: 10px solid $light;
+    box-sizing: border-box;
+    overflow: hidden;
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+    &:hover {
+      .project-description {
+        transform: translateY(0);
+        bottom: 0;
+        background-color: rgba($black, 0.75);
+      }
+    }
+    .project-description {
+      -webkit-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      position: absolute;
+      bottom: 100px; // fix this
+      left: 0;
+      right: 0;
+      top: 0;
+      transform: translateY(100%);
+      background-color: rgba($black, 0.5);
+      overflow-x: scroll;
+    }
+  }
 }
+
 
 .gitLink {
 max-height:30px;
@@ -174,14 +221,6 @@ max-height:30px;
       padding:15px;
 }
 
-.column {
-   
-}
 
-.wall {
-   width:1px; 
-   background-color:black;
-   float:center;
-}
 
 
