@@ -206,4 +206,9 @@ max-height:30px;
    height: 100vh;
 }
 
-
+.activeProject {
+   min-width:80vw; 
+   margin:20px;
+   height: 350px;
+   border-right: 80vw solid $light;
+}
