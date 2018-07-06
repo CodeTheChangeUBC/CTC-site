@@ -354,7 +354,7 @@ hr {
 
 small,
 .small {
-  font-size: 80%;
+  font-size: 0.9rem;
   font-weight: 400; }
 
 mark,
@@ -1420,7 +1420,7 @@ pre {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(142, 195, 70, 0.25); }
   .form-control::placeholder {
-    color: #565A61;
+    color: #BDC0C6;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #D9DADD;
@@ -1559,7 +1559,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 80%;
+  font-size: 0.9rem;
   color: #8EC346; }
 
 .valid-tooltip {
@@ -1629,7 +1629,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 80%;
+  font-size: 0.9rem;
   color: #dc3545; }
 
 .invalid-tooltip {
@@ -6491,6 +6491,27 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
+.navbar ul li.nav-item.active a:before {
+  opacity: 1;
+  transform: scaleX(1); }
+.navbar ul li.nav-item a:hover:before, .navbar ul li.nav-item a:focus:before {
+  opacity: 1;
+  transform: scaleX(1); }
+.navbar ul li.nav-item a:before {
+  transition: all 200ms ease-in-out;
+  content: "";
+  position: relative;
+  display: block;
+  bottom: -30px;
+  height: 2px;
+  border-radius: 4px;
+  background: #203864;
+  opacity: 0;
+  transform: scaleX(0); }
+
+.social-media-icon {
+  height: 1.25rem; }
+
 @media (max-width: 767.98px) {
   .navbar .navbar-brand,
   .navbar .navbar-toggler {
@@ -6553,6 +6574,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+a:hover {
+  transition: all 200ms ease-in-out; }
+
 h1, .h1 {
   font-weight: 200;
   letter-spacing: -2px; }
@@ -6581,13 +6605,25 @@ button:focus, .btn:focus {
   outline: 0; }
 
 .header-image {
-  height: 750px;
+  height: 600px;
   margin-top: -76px;
-  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 15%), url("../images/ubcmainmall.jpg");
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 15%), url("../images/ubcclocktower.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
   background-size: cover; }
+  @media (min-width: 576px) {
+    .header-image {
+      height: 650px; } }
+  @media (min-width: 768px) {
+    .header-image {
+      height: 700px; } }
+  @media (min-width: 992px) {
+    .header-image {
+      height: 750px; } }
+  @media (min-width: 1200px) {
+    .header-image {
+      height: 800px; } }
 
 html {
   position: relative;
@@ -6613,6 +6649,18 @@ section {
   background-attachment: scroll;
   background-position: center top;
   background-size: cover; }
+  @media (min-width: 576px) {
+    .secondary-header-image {
+      height: 325px; } }
+  @media (min-width: 768px) {
+    .secondary-header-image {
+      height: 350px; } }
+  @media (min-width: 992px) {
+    .secondary-header-image {
+      height: 375px; } }
+  @media (min-width: 1200px) {
+    .secondary-header-image {
+      height: 400px; } }
 
 #projectBanner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/ubcmainmall.jpg");
@@ -6671,35 +6719,16 @@ section {
 .gitLink {
   max-height: 30px; }
 
-.footerIcon {
-  max-height: 35px;
-  padding: 0px 10px 7px; }
-
-.headerIcon {
-  max-height: 25px;
-  padding: 0px 4px; }
-
-#volunteerBanner {
-  margin: 25px;
-  background-color: #26282B;
-  color: white; }
-
-#volPrompt {
-  margin: 15px;
-  font-size-adjust: auto;
-  text-align: center; }
-
-#contactForm {
-  padding: 15px; }
-
-.workBanner {
-  min-height: 480px;
-  height: 100vh; }
-
 .activeProject {
   min-width: 80vw;
   margin: 20px;
   height: 350px;
   border-right: 80vw solid #D9DADD; }
+
+.workBanner {
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 30%), url("../images/ubcfountain.jpg");
+  min-height: 480px;
+  height: 100vh;
+  max-height: 1150px; }
 
 /*# sourceMappingURL=styles.css.map */

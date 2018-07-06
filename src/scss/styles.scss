@@ -17,6 +17,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  &:hover {
+    transition: all 200ms ease-in-out;
+  }
+}
+
 h1, .h1 {
   font-weight: 200;
   letter-spacing: -2px;
@@ -56,9 +62,13 @@ button, .btn {
 
 // header image
 .header-image {
-  height: 750px;
+  height: 600px;
+  @include media-breakpoint-up(sm) { height: 650px; }
+  @include media-breakpoint-up(md) { height: 700px; }
+  @include media-breakpoint-up(lg) { height: 750px; }
+  @include media-breakpoint-up(xl) { height: 800px; }
   margin-top: -76px;
-  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/ubcmainmall.jpg");
+  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/ubcclocktower.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
@@ -90,6 +100,10 @@ section {
 
 .secondary-header-image {
   height: 300px;
+  @include media-breakpoint-up(sm) { height: 325px; }
+  @include media-breakpoint-up(md) { height: 350px; }
+  @include media-breakpoint-up(lg) { height: 375px; }
+  @include media-breakpoint-up(xl) { height: 400px; }
   margin-top: -76px;
   background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url("../images/ubcmainmall.jpg");
   background-repeat: no-repeat;
@@ -114,7 +128,6 @@ section {
 }
 
 // projects page
-
 .projectImage {
    max-height:100px;
    width:auto;
@@ -169,46 +182,23 @@ section {
   }
 }
 
-
 .gitLink {
 max-height:30px;
 }
 
-.footerIcon {
-   max-height:35px;
-   padding: 0px 10px 7px;
+.activeProject {
+  min-width: 80vw;
+  margin: 20px;
+  height: 350px;
+  border-right: 80vw solid $light;
 }
 
-.headerIcon {
-   max-height:25px;
-   padding: 0px 4px;
-}
-
-// contacts us page
-#volunteerBanner {
-   margin: 25px;
-   background-color: #26282B;
-   color:white;
-}
-
-#volPrompt {
-   margin: 15px;
-   font-size-adjust: auto;
-   text-align: center;
-}
-
-#contactForm {
-      padding:15px;
-}
-
+// work with us page
 .workBanner {
+  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url('../images/ubcfountain.jpg');
    min-height:480px;
    height: 100vh;
+   max-height: 1150px;
 }
 
-.activeProject {
-   min-width:80vw; 
-   margin:20px;
-   height: 350px;
-   border-right: 80vw solid $light;
-}
+

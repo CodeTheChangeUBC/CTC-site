@@ -1,5 +1,47 @@
 // Navbar
 
+// Page Underline
+.navbar {
+  ul {
+    li.nav-item {
+      &.active {
+        a {
+          &:before {
+            opacity: 1;
+            transform: scaleX(1);
+          }
+        }
+      }
+      a {
+        &:hover,
+        &:focus {
+          &:before {
+            opacity: 1;
+            transform: scaleX(1);
+          }
+        }
+        &:before {
+          transition: all 200ms ease-in-out;
+          content: "";
+          position: relative;
+          display: block;
+          bottom: -30px;
+          height: 2px;
+          border-radius: 4px;
+          background: $secondary;
+          opacity: 0;
+          transform: scaleX(0);
+        }
+      }
+    }
+  }
+}
+
+// Social Media Icons
+.social-media-icon {
+  height: 1.25rem;
+}
+
 // Mobile Navbar
 @include media-breakpoint-down(sm) {
   .navbar {
