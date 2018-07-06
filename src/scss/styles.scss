@@ -138,48 +138,48 @@ section {
 }
 
 .project-container {
-  .project-image {
-    position: relative;
-    margin: auto;
-    width: 100%;
-    min-width : 220px;
-    max-width: 350px;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    border-radius: 0.625rem;
-    border: 0.3125rem solid $light;
-    box-sizing: border-box;
-    overflow: hidden;
-    &:before {
-      content: "";
-      display: block;
-      padding-top: 100%;
-    }
-    &:hover {
-      .project-description {
-        transform: translateY(0);
-        bottom: 0;
-        background-color: rgba($black, 0.95);
+   .project-image {
+      position: relative;
+      margin: auto;
+      width: 100%;
+      min-width : 220px;
+      max-width: 350px;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center;
+      background-size: cover;
+      border-radius: 0.625rem;
+      border: 0.3125rem solid $light;
+      box-sizing: border-box;
+      overflow: hidden;
+      &:before {
+         content: "";
+         display: block;
+         padding-top: 100%;
       }
-    }
+      &:hover {
+         .project-description {
+         transform: translateY(0);
+         bottom: 0;
+         background-color: rgba($black, 0.95);
+         }
+      }
 
-    .project-description {
-      -webkit-transition: 0.5s ease-in-out;
-      -moz-transition: 0.5s ease-in-out;
-      -o-transition: 0.5s ease-in-out;
-      transition: 0.5s ease-in-out;
-      position: absolute;
-      bottom: 100px; // fix this
-      left: 0;
-      right: 0;
-      top: 0;
-      transform: translateY(100%);
-      background-color: rgba($black, 0.75);
-      border-radius: 0.3125rem;
-    }
-  }
+      .project-description {
+         -webkit-transition: 0.5s ease-in-out;
+         -moz-transition: 0.5s ease-in-out;
+         -o-transition: 0.5s ease-in-out;
+         transition: 0.5s ease-in-out;
+         position: absolute;
+         bottom: 100px; // fix this
+         left: 0;
+         right: 0;
+         top: 0;
+         transform: translateY(100%);
+         background-color: rgba($black, 0.75);
+         border-radius: 0.3125rem;
+      }
+   }
 }
 
 .gitLink {
@@ -195,7 +195,7 @@ max-height:30px;
 
 // work with us page
 .workBanner {
-  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url('../images/ubcfountain.jpg');
+   background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url('../images/ubcfountain.jpg');
    min-height:480px;
    height: 100vh;
    max-height: 1150px;
