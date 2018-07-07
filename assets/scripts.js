@@ -1,24 +1,15 @@
-
-
-// Resize project box
-
-let activeElement = null;
-
-$(".project-container").click(function () {
-   if (activeElement) {
-      $(activeElement).removeClass("activeProject");
-   }
-   if (this) {
-      activeElement=this;
-   }
-   $(this).addClass("activeProject");
-   console.log(this.classList);
-   console.log(activeElement);
-});
+//
+// Scripts
+//
 
 // smooth scroll
-$(document).on('click', 'a[href^="#"]', function (event) {
+$(document).on('click', '.workBanner a[href^="#"]', function (event) {
   $('html, body').animate({
     scrollTop: $($.attr(this, 'href')).offset().top
   }, 500);
+});
+
+// projects page
+$('.show-more-button').on('click', function (event) {
+   $('.collapse.show').collapse('toggle');
 });

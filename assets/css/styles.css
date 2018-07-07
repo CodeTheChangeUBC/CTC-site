@@ -6673,13 +6673,6 @@ section {
   #joinBanner > .container {
     max-width: 100%; } }
 
-.projectImage {
-  max-height: 100px;
-  width: auto; }
-
-.projectInfo {
-  border: 2px solid grey; }
-
 .project-container .project-image {
   position: relative;
   margin: auto;
@@ -6690,40 +6683,47 @@ section {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  border-radius: 0.625rem;
-  border: 0.3125rem solid #D9DADD;
+  border-radius: 10px;
+  border: 5px solid #D9DADD;
   box-sizing: border-box;
-  overflow: hidden; }
+  overflow: visible; }
   .project-container .project-image:before {
     content: "";
     display: block;
-    padding-top: 100%; }
-  .project-container .project-image:hover .project-description {
-    transform: translateY(0);
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.95); }
-  .project-container .project-image .project-description {
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+    padding-top: 100%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.75);
+    opacity: 0; }
+  .project-container .project-image:after {
+    content: "Learn More";
     position: absolute;
-    bottom: 100px;
     left: 0;
     right: 0;
+    bottom: 0;
     top: 0;
-    transform: translateY(100%);
+    color: #203864;
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; }
+  .project-container .project-image:hover:before {
+    opacity: 1;
+    transition: all 200ms ease-in-out; }
+  .project-container .project-image:hover:after {
+    opacity: 1;
+    transition: all 200ms ease-in-out; }
+  .project-container .project-image .project-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 0.3125rem; }
+    border-radius: 5px; }
 
 .gitLink {
   max-height: 30px; }
-
-.activeProject {
-  min-width: 80vw;
-  margin: 20px;
-  height: 350px;
-  border-right: 80vw solid #D9DADD; }
 
 .workBanner {
   background-image: linear-gradient(white, rgba(255, 255, 255, 0) 30%), url("../images/ubcfountain.jpg");

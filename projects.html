@@ -59,131 +59,260 @@
          </div>
       </header>
 
-      <section class="container">
-         <h2>All Projects</h2>
-         <dl id="projectsList" class="row text-white">
-            <div class="project-container col-12 col-md-6 col-lg-4 mb-4">
-               <div class="project-image" style="background-image: url('assets/images/proj/bcsara.png');">
-                  <div class="project-description p-3">
-                     <dt class="h4 projectName">BC Search and Rescue</dt>
-                     <dd class="h6 projectType">Task Reporting</dd>
-                     <dd class="shortDesc">We enabled search teams to log data about their task directly from the field, where they may not have access to a network.</dd>
-                     <dd class="longDesc d-none">BC Search and Rescue is rolling out a new data management system across the province. However the system only has online capabilities. When in the field, teams may not have access to a network but they still need to log data about their task. We’re building the functionality to enable teams to log data offline, and then upload it to the server once they’re back on a network.</dd>
-                     <dd class="projectLink"><a href="https://github.com/CodeTheChangeUBC/sar-task_report" alt="Sar Repo"><img class= "gitLink" src="assets/images/github-small.png"> /SAR</a> </dd>
+      <section>
+         <div id="projectsList" class="container">
+            <h2>All Projects</h2>
+            <div class="row">
+               <div class="project-container mb-4 order-md-1 order-lg-1 col-12 col-md-6 col-lg-4">
+                  <a class="show-more-button" data-toggle="collapse" href="#collapseExample" role="button" 
+                  aria-expanded="false" aria-controls="collapseExample">
+                     <div class="project-image" style="background-image: url('assets/images/proj/bcsara.png');">
+                        <div class="project-description p-2">
+                           <h6 class="m-0 text-white">BC Search and Rescue</h6>
+                           <p class="m-0 text-light font-weight-bold small">Task Reporting</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-12 order-md-3 order-lg-4 collapse" id="collapseExample">
+                  <div class="mb-4 card card-body">
+                     <h3 class="text-secondary">BC Search and Rescue</h3>
+                     <h5 class="mb-0">Task Reporting</h5>
+                     <hr/>
+                     <p class="lead">We enabled search teams to log data about their task directly from the field, where they may not have access to a network.</p>
+                     <p>BC Search and Rescue is rolling out a new data management system across the province. However the system only has online capabilities. When in the field, teams may not have access to a network but they still need to log data about their task. We’re building the functionality to enable teams to log data offline, and then upload it to the server once they’re back on a network.</p>
+                     <p class="m-0"><a class="btn btn-secondary text-white" href="https://github.com/CodeTheChangeUBC/sar-task_report" alt="Sar Repo">See project on GitHub</a></p>
                   </div>
                </div>
-            </div><!--end of project-->
-            
-            <div class="project-container col-12 col-md-6 col-lg-4 mb-4">
-               <div class="project-image" style="background-image: url('assets/images/proj/reboot.jpg');">
-                  <div class="project-description p-3">
-                     <dt class="h4 projectName">ReBOOT Canada</dt>
-                     <dd class="h6 projectType">Donation Tracking System</dd>
-                     <dd class="shortDesc">ReBOOT refurbishes and distributes used computer equipment to non-profit organizations. We built a secure, online platform to help track donations.</dd>
-                     <dd class="longDesc d-none">ReBOOT refurbishes old computer equipment and distributes it to other non-profits and charities. Founded in 1995 and based in Toronto, ReBOOT has recycled over 200,000 pieces of equipment. We're building them a secure, online platform through which they can track all of their received donations. It will provide a simple interface through which donors can register and the admins can track the details of donations. The system will also provide tax receipts for donors.</dd>
-                     <dd class="projectLink"><a href="https://github.com/CodeTheChangeUBC/ReBOOT" alt="Reboot Repo"><img class= "gitLink" src="assets/images/github-small.png"> /REBOOT</a></dd>
+               
+               <div class="project-container mb-4 order-md-2 order-lg-2 col-12 col-md-6 col-lg-4">
+                  <a class="show-more-button" data-toggle="collapse" href="#collapseExample2" role="button" 
+                  aria-expanded="false" aria-controls="collapseExample2">
+                     <div class="project-image" style="background-image: url('assets/images/proj/reboot.jpg');">
+                        <div class="project-description p-2">
+                           <h6 class="m-0 text-white">ReBOOT Canada</h6>
+                           <p class="m-0 text-light font-weight-bold small">Donation Tracking System</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-12 order-md-4 order-lg-5 collapse" id="collapseExample2">
+                  <div class="mb-4 card card-body">
+                     <h3 class="text-secondary">ReBOOT Canada</h6>
+                     <h5 class="mb-0">Donation Tracking System</h5>
+                     <hr/>
+                     <p class="lead">ReBOOT refurbishes and distributes used computer equipment to non-profit organizations. We built a secure, online platform to help track donations.</p>
+                     <p>ReBOOT refurbishes old computer equipment and distributes it to other non-profits and charities. Founded in 1995 and based in Toronto, ReBOOT has recycled over 200,000 pieces of equipment. We're building them a secure, online platform through which they can track all of their received donations. It will provide a simple interface through which donors can register and the admins can track the details of donations. The system will also provide tax receipts for donors.</p>
+                     <p class="m-0"><a class="btn btn-secondary text-white" href="https://github.com/CodeTheChangeUBC/ReBOOT" alt="Reboot Repo">See project on GitHub</a></p>
                   </div>
                </div>
-            </div><!--end of project-->
 
-            <div class="project-container col-12 col-md-6 col-lg-4 mb-4">
-               <div class="project-image" style="background-image: url('assets/images/proj/big_brothers.jpg');">
-                  <div class="project-description p-3">
-                     <dt class="h4 projectName">Big Brothers</dt>
-                     <dd class="h6 projectType">Data Aggregation</dd>
-                     <dd class="shortDesc">We helped Big Brothers optimize their placement of clothing donation bins across the Lower Mainland by aggregating and visualizing information from different sources.</dd>
-                     <dd class="longDesc d-none">Sixty percent of the funding for Big Brothers Vancouver comes from clothing donations. They sells the donations to Value Village to make a profit and need to place their donation bins strategically across the lower mainland. The goal of this project is to help Big Brothers with their problem by building a web application that will pull donation bin locations from many different sources and put them all on one nice map so they can see where they should place theirs.</dd>
-                     <dd class="projectLink"><a href="https://github.com/CodeTheChangeUBC/bigbrothers" alt="bb repo"><img class= "gitLink" src="assets/images/github-small.png"> /BIGBROTHERS</a></dd>
+               <div class="project-container mb-4 order-md-5 order-lg-3 col-12 col-md-6 col-lg-4">
+                  <a class="show-more-button" data-toggle="collapse" href="#collapseExample3" role="button" 
+                  aria-expanded="false" aria-controls="collapseExample3">
+                     <div class="project-image" style="background-image: url('assets/images/proj/big_brothers.jpg');">
+                        <div class="project-description p-2">
+                           <h6 class="m-0 text-white">Big Brothers</h6>
+                           <p class="m-0 text-light font-weight-bold small">Data Aggregation</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-12 order-md-7 order-lg-6 collapse" id="collapseExample3">
+                  <div class="mb-4 card card-body">
+                     <h3 class="text-secondary">Big Brothers</h6>
+                     <h5 class="mb-0">Data Aggregation</h5>
+                     <hr/>
+                     <p class="lead">We helped Big Brothers optimize their placement of clothing donation bins across the Lower Mainland by aggregating and visualizing information from different sources.</p>
+                     <p>Sixty percent of the funding for Big Brothers Vancouver comes from clothing donations. They sells the donations to Value Village to make a profit and need to place their donation bins strategically across the lower mainland. The goal of this project is to help Big Brothers with their problem by building a web application that will pull donation bin locations from many different sources and put them all on one nice map so they can see where they should place theirs.</p>
+                     <p class="m-0"><a class="btn btn-secondary text-white" href="https://github.com/CodeTheChangeUBC/bigbrothers" alt="bb repo">See project on GitHub</a></p>
                   </div>
                </div>
-            </div><!--end of project-->
 
-            <div class="project-container col-12 col-md-6 col-lg-4 mb-4">
-               <div class="project-image" style="background-image: url('assets/images/proj/vcs.jpg');">
-                  <div class="project-description p-3">
-                     <dt class="h4 projectName">Vancouver Cantata Singers</dt>
-                     <dd class="h6 projectType">Website</dd>
-                     <dd class="shortDesc">We built a website to help the VCS improve their outreach so they can continue to showcase incredible music in Vancouver.</dd>
-                     <dd class="longDesc d-none">The Vancouver Cantata Singers (VCS) is a non-profit working in the arts and culture space. Founded in 1957, they are a premier, award winning ensemble. They often fundraise for events like the Spinal Chord Gala. We built a website to help the VCS improve their outreach so they can continue to showcase incredible music in Vancouver.</dd>
-                     <dd class="projectLink"><a href="https://github.com/CodeTheChangeUBC/vcs" alt="vcs repo"><img class= "gitLink" src="assets/images/github-small.png"> /VCS</a></dd>
-                     <dd class="projectLink"><a href="http://vancouvercantatasingers.com/">Visit the Website.</a></dd>
+               <div class="project-container mb-4 order-md-6 order-lg-7 col-12 col-md-6 col-lg-4">
+                  <a class="show-more-button" data-toggle="collapse" href="#collapseExample4" role="button" 
+                  aria-expanded="false" aria-controls="collapseExample4">
+                     <div class="project-image" style="background-image: url('assets/images/proj/vcs.jpg');">
+                        <div class="project-description p-2">
+                           <h6 class="m-0 text-white">Vancouver Cantata Singers</h6>
+                           <p class="m-0 text-light font-weight-bold small">Website</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-12 order-md-8 order-lg-10 collapse" id="collapseExample4">
+                  <div class="mb-4 card card-body">
+                     <h3 class="text-secondary">Vancouver Cantata Singers</h6>
+                     <h5 class="mb-0">Website</h5>
+                     <hr/>
+                     <p class="lead">We built a website to help the VCS improve their outreach so they can continue to showcase incredible music in Vancouver.</p>
+                     <p>The Vancouver Cantata Singers (VCS) is a non-profit working in the arts and culture space. Founded in 1957, they are a premier, award winning ensemble. They often fundraise for events like the Spinal Chord Gala. We built a website to help the VCS improve their outreach so they can continue to showcase incredible music in Vancouver.</p>
+                     <p class="m-0"><a class="btn btn-secondary text-white" href="https://github.com/CodeTheChangeUBC/vcs" alt="vcs repo">See project on GitHub</a></p>
+                     <p class="m-0 mt-2"><a class="btn btn-primary text-white" href="http://vancouvercantatasingers.com/">Visit the Website.</a></p>
                   </div>
                </div>
-            </div><!--end of project-->
 
-            <div class="project-container col-12 col-md-6 col-lg-4 mb-4">
-               <div class="project-image" style="background-image: url('assets/images/proj/sasc.png');">
-                  <div class="project-description p-3">
-                     <dt class="h4 projectName">UBC Sexual Assault Support Centre</dt>
-                     <dd class="h6 projectType">Chat Application</dd>
-                     <dd class="shortDesc">We are working with SASC to create an online chat application to increase the effectiveness and reach of the counsellors.</dd>
-                     <dd class="longDesc d-none">The UBC Sexual Assault Support Centre (SASC) is committed to the education, support, and empowerment of people of all genders who are survivors of sexualized violence. They form an important part of the UBC community, serving not only victims of sexual assault but providing services for their friends and family as well. We are developing an online chat application to increase the effectiveness and reach of the counsellors. </dd>
-                     <dd class="projectLink"><a href="https://github.com/CodeTheChangeUBC/sasc" alt="sasc repo"><img class= "gitLink" src="assets/images/github-small.png"> /SASC</a></dd>
+               <div class="project-container mb-4 order-md-9 order-lg-8 col-12 col-md-6 col-lg-4">
+                  <a class="show-more-button" data-toggle="collapse" href="#collapseExample5" role="button" 
+                  aria-expanded="false" aria-controls="collapseExample5">
+                     <div class="project-image" style="background-image: url('assets/images/proj/sasc.png');">
+                        <div class="project-description p-2">
+                           <h6 class="m-0 text-white">UBC Sexual Assault Support Centre</h6>
+                           <p class="m-0 text-light font-weight-bold small">Chat Application</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-12 order-md-11 order-lg-11 collapse" id="collapseExample5">
+                  <div class="mb-4 card card-body">
+                     <h3 class="text-secondary">UBC Sexual Assault Support Centre</h6>
+                     <h5 class="mb-0">Chat Application</h5>
+                     <hr/>
+                     <p class="lead">We are working with SASC to create an online chat application to increase the effectiveness and reach of the counsellors.</p>
+                     <p>The UBC Sexual Assault Support Centre (SASC) is committed to the education, support, and empowerment of people of all genders who are survivors of sexualized violence. They form an important part of the UBC community, serving not only victims of sexual assault but providing services for their friends and family as well. We are developing an online chat application to increase the effectiveness and reach of the counsellors. </p>
+                     <p class="m-0"><a class="btn btn-secondary text-white" href="https://github.com/CodeTheChangeUBC/sasc" alt="sasc repo">See project on GitHub</a></p>
                   </div>
                </div>
-            </div><!--end of project-->
 
-            <div class="project-container col-12 col-md-6 col-lg-4 mb-4">
-               <div class="project-image" style="background-image: url('assets/images/proj/vice.png');">
-                  <div class="project-description p-3">
-                     <dt class="h4 projectName">AMS Vice and Speakeasy</dt>
-                     <dd class="h6 projectType">Website</dd>
-                     <dd class="shortDesc">We are building a website to help inform the UBC community of the resources offered by Vice and Speakeasy.</dd>
-                     <dd class="longDesc d-none">Vice and Speakeasy are services at UBC which aim to promote student health and well-being on campus. VICE is focused on providing students with the most reliable information regarding substance use, and to help students make informed decisions when it comes to drugs and alcohol. Speakeasy provides one-on-one, confidential support for students and staff at UBC who need support. We are building a website to help inform the UBC community of the resources offered by Vice and Speakeasy.</dd>
-                     <dd class="projectLink"><a href="https://github.com/CodeTheChangeUBC/speakeasy-vice" alt="vice repo"><img class= "gitLink" src="assets/images/github-small.png"> /SPEAKEASY-VICE</a></dd>
+               <div class="project-container mb-4 order-md-10 order-lg-9 col-12 col-md-6 col-lg-4">
+                  <a class="show-more-button" data-toggle="collapse" href="#collapseExample6" role="button" 
+                  aria-expanded="false" aria-controls="collapseExample6">
+                     <div class="project-image" style="background-image: url('assets/images/proj/vice.png');">
+                        <div class="project-description p-2">
+                           <h6 class="m-0 text-white">AMS Vice and Speakeasy</h6>
+                           <p class="m-0 text-light font-weight-bold small">Website</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-12 order-md-12 order-lg-12 collapse" id="collapseExample6">
+                  <div class="mb-4 card card-body">
+                     <h3 class="text-secondary">AMS Vice and Speakeasy</h6>
+                     <h5 class="mb-0">Website</h5>
+                     <hr/>
+                     <p class="lead">We are building a website to help inform the UBC community of the resources offered by Vice and Speakeasy.</p>
+                     <p>Vice and Speakeasy are services at UBC which aim to promote student health and well-being on campus. VICE is focused on providing students with the most reliable information regarding substance use, and to help students make informed decisions when it comes to drugs and alcohol. Speakeasy provides one-on-one, confidential support for students and staff at UBC who need support. We are building a website to help inform the UBC community of the resources offered by Vice and Speakeasy.</p>
+                     <p class="m-0"><a class="btn btn-secondary text-white" href="https://github.com/CodeTheChangeUBC/speakeasy-vice" alt="vice repo">See project on GitHub</a></p>
                   </div>
                </div>
-            </div><!--end of project-->
+            </div>
 
-            <div class="project-container col-12 col-md-6 col-lg-4 mb-4">
-               <div class="project-image" style="background-image: url('assets/images/proj/code_initiative.png');">
-                  <div class="project-description p-3">
-                     <dt class="h4 projectName">The Code Initiative</dt>
-                     <dd class="h6 projectType">Website</dd>
-                     <dd class="shortDesc">The Code Initiative is a not-for-profit that provides coding workshops for youth on the autism spectrum. We built a website for them to showcase their innovative programs.</dd>
-                     <dd class="longDesc d-none">The Code Initiative is a not-for-profit that provides coding workshops for youth on the autism spectrum. We built a website for them to showcase their innovative programs.</dd>
-                     <dd class="projectLink"><a href="https://thecodeinitiative.ca/" alt="TCI Website">Visit the Website.</a></dd>
+            <div class="row">
+               <div class="project-container mb-4 order-md-1 order-lg-1 col-12 col-md-6 col-lg-4">
+                  <a class="show-more-button" data-toggle="collapse" href="#collapseExample7" role="button" 
+                  aria-expanded="false" aria-controls="collapseExample7">
+                     <div class="project-image" style="background-image: url('assets/images/proj/code_initiative.png');">
+                        <div class="project-description p-2">
+                           <h6 class="m-0 text-white">The Code Initiative</h6>
+                           <p class="m-0 text-light font-weight-bold small">Website</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-12 order-md-3 order-lg-4 collapse" id="collapseExample7">
+                  <div class="mb-4 card card-body">
+                     <h3 class="text-secondary">The Code Initiative</h6>
+                     <h5 class="mb-0">Website</h5>
+                     <hr/>
+                     <p class="lead">The Code Initiative is a not-for-profit that provides coding workshops for youth on the autism spectrum. We built a website for them to showcase their innovative programs.</p>
+                     <p>The Code Initiative is a not-for-profit that provides coding workshops for youth on the autism spectrum. We built a website for them to showcase their innovative programs.</p>
+                     <p class="m-0 mt-2"><a class="btn btn-primary text-white" href="https://thecodeinitiative.ca/" alt="TCI Website">Visit the Website.</a></p>
                   </div>
                </div>
-            </div><!--end of project-->
+               
+               <div class="project-container mb-4 order-md-2 order-lg-2 col-12 col-md-6 col-lg-4">
+                  <a class="show-more-button" data-toggle="collapse" href="#collapseExample8" role="button" 
+                  aria-expanded="false" aria-controls="collapseExample8">
+                     <div class="project-image" style="background-image: url('assets/images/proj/ftc.jpeg');">
+                        <div class="project-description p-2">
+                           <h6 class="m-0 text-white">Free The Children</h6>
+                           <p class="m-0 text-light font-weight-bold small">Website</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-12 order-md-4 order-lg-5 collapse" id="collapseExample8">
+                  <div class="mb-4 card card-body">
+                     <h3 class="text-secondary">Free The Children</h6>
+                     <h5 class="mb-0">Website</h5>
+                     <hr/>
+                     <p class="lead">We built FTC UBC a website to help them be more productive in creating change on campus.</p>
+                     <p>Free the Children at UBC is a club on campus who is committed to helping eradicate poverty through a sustainable, five pillar system. Their parent organization, Free the Children, has made huge contributions to breaking the cycle of poverty with their programs. The club wanted a website which kept track of their members, events, fundraisers and documents all in one place. We built FTC UBC a website to help them keep track of their members, events, fundraisers and documents all in one place. </p>
+                     <p class="m-0"><a class="btn btn-secondary text-white" href="https://github.com/CodeTheChangeUBC/FtC-Website" alt="FTC repo">See project on GitHub</a></p>
+                     <p class="m-0 mt-2"><a class="btn btn-primary text-white" href="https://ubcftc.herokuapp.com/" alt="FTC Website">Visit the Website.</a></p>
+                  </div>
+               </div>
 
-            <div class="project-container col-12 col-md-6 col-lg-4 mb-4">
-               <div class="project-image" style="background-image: url('assets/images/proj/ftc.jpeg');">
-                  <div class="project-description p-3">
-                     <dt class="h4 projectName">Free The Children</dt>
-                     <dd class="h6 projectType">Website</dd>
-                     <dd class="shortDesc">We built FTC UBC a website to help them be more productive in creating change on campus.</dd>
-                     <dd class="longDesc d-none">Free the Children at UBC is a club on campus who is committed to helping eradicate poverty through a sustainable, five pillar system. Their parent organization, Free the Children, has made huge contributions to breaking the cycle of poverty with their programs. The club wanted a website which kept track of their members, events, fundraisers and documents all in one place. We built FTC UBC a website to help them keep track of their members, events, fundraisers and documents all in one place. </dd>
-                     <dd class="projectLink"><a href="https://github.com/CodeTheChangeUBC/FtC-Website" alt="FTC repo"><img class= "gitLink" src="assets/images/github-small.png"> /FTC-WEBSITE</a></dd>
-                     <dd class="projectLink"><a href="https://ubcftc.herokuapp.com/" alt="FTC Website">Visit the Website.</a></dd>
+               <div class="project-container mb-4 order-md-5 order-lg-3 col-12 col-md-6 col-lg-4">
+                  <a class="show-more-button" data-toggle="collapse" href="#collapseExample9" role="button" 
+                  aria-expanded="false" aria-controls="collapseExample9">
+                     <div class="project-image" style="background-image: url('assets/images/proj/vjk.jpg');">
+                        <div class="project-description p-2">
+                           <h6 class="m-0 text-white">Verna J Kirkness Program</h6>
+                           <p class="m-0 text-light font-weight-bold small">Database</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-12 order-md-7 order-lg-6 collapse" id="collapseExample9">
+                  <div class="mb-4 card card-body">
+                     <h3 class="text-secondary">Verna J Kirkness Program</h6>
+                     <h5 class="mb-0">Database</h5>
+                     <hr/>
+                     <p class="lead">We developed a database to help the program easily access and visualize all of their data.</p>
+                     <p>The Verna J Kirkness program promotes the STEM fields among indigenous youth. Once a year, the program partners with post-secondary institutions to pair high school aged indigenous students with graduate students from across different scientific disciplines. The students spend a week performing experiments, asking questions, and learning about the scientific process. We developed a database to contain all of the organization’s outreach information, which allowed for easy visualization and access to their data.</p>
+                     <p class="m-0"><a class="btn btn-secondary text-white" href="https://github.com/CodeTheChangeUBC/vjk" alt="VJK repo">See project on GitHub</a></p>
                   </div>
                </div>
-            </div><!--end of project-->
 
-            <div class="project-container col-12 col-md-6 col-lg-4 mb-4">
-               <div class="project-image" style="background-image: url('assets/images/proj/vjk.jpg');">
-                  <div class="project-description p-3">
-                     <dt class="h4 projectName">Verna J Kirkness Program</dt>
-                     <dd class="h6 projectType">Database</dd>
-                     <dd class="shortDesc">We developed a database to help the program easily access and visualize all of their data.</dd>
-                     <dd class="longDesc d-none">The Verna J Kirkness program promotes the STEM fields among indigenous youth. Once a year, the program partners with post-secondary institutions to pair high school aged indigenous students with graduate students from across different scientific disciplines. The students spend a week performing experiments, asking questions, and learning about the scientific process. We developed a database to contain all of the organization’s outreach information, which allowed for easy visualization and access to their data.</dd>
-                     <dd class="projectLink"><a href="https://github.com/CodeTheChangeUBC/vjk" alt="VJK repo"><img class= "gitLink" src="assets/images/github-small.png"> /VJK</a></dd>
-                  </div>
+               <div class="project-container mb-4 order-md-6 order-lg-7 col-12 col-md-6 col-lg-4">
+                  <a class="show-more-button" data-toggle="collapse" href="#collapseExample10" role="button" 
+                  aria-expanded="false" aria-controls="collapseExample10">
+                     <div class="project-image" style="background-image: url('assets/images/proj/bcsmssa.jpg');">
+                        <div class="project-description p-2">
+                           <h6 class="m-0 text-white">BC Society for the Male Survivors of Sexual Assault</h6>
+                           <p class="m-0 text-light font-weight-bold small">Data Intake and Analysis</p>
+                        </div>
+                     </div>
+                  </a>
                </div>
-            </div><!--end of project-->
+               <div class="col-12 order-md-8 order-lg-10 collapse" id="collapseExample10">
+                  <div class="mb-4 card card-body">
+                     <h3 class="text-secondary">BC Society for the Male Survivors of Sexual Assault</h6>
+                     <h5 class="mb-0">Data Intake and Analysis</h5>
+                     <hr/>
+                     <p class="lead">The BCMSSA provides support and treatment for males who are victims of sexual abuse. We developed a database for the data collected by the organization.</p>
+                     <p>The BCMSSA provides support and treatment for males who are victims of sexual abuse. We developed a database for the data collected by the organization. They needed to use the data to carry out independent research on the statistics of sexual assaults across BC, so the site also enabled basic data analysis and visualization.</p>
+                     <p class="m-0"><a class="btn btn-secondary text-white" href="https://github.com/CodeTheChangeUBC/bcsmssa" alt="BCSMSSA repo">See project on GitHub</a></p>
+                  </div>
+               </d2v>
 
-            <div class="project-container col-12 col-md-6 col-lg-4 mb-4">
-               <div class="project-image" style="background-image: url('assets/images/proj/bcsmssa.jpg');">
-                  <div class="project-description p-3">
-                     <dt class="h4 projectName">BC Society for the Male Survivors of Sexual Assault</dt>
-                     <dd class="h6 projectType">Data Intake and Analysis</dd>
-                     <dd class="shortDesc">The BCMSSA provides support and treatment for males who are victims of sexual abuse. We developed a database for the data collected by the organization.</dd>
-                     <dd class="longDesc d-none">The BCMSSA provides support and treatment for males who are victims of sexual abuse. We developed a database for the data collected by the organization. They needed to use the data to carry out independent research on the statistics of sexual assaults across BC, so the site also enabled basic data analysis and visualization.</dd>
-                     <dd class="projectLink"><a href="https://github.com/CodeTheChangeUBC/bcsmssa" alt="BCSMSSA repo"><img class= "gitLink" src="assets/images/github-small.png"> /BCSMSSA</a></dd>
-                  </div>
+               <!-- <div class="project-container mb-4 order-md-9 order-lg-8 col-12 col-md-6 col-lg-4">
+                     <p class="m-0 text-center">
+                        <a class="show-more-button" data-toggle="collapse" href="#collapseExample11" role="button" 
+                        aria-expanded="false" aria-controls="collapseExample11"><i class="arrow down"></i></a>
+                     </p>
                </div>
-            </div><!--end of project-->
-         </dl>
+               <div class="col-12 order-md-11 order-lg-11 collapse" id="collapseExample11">
+                  <div class="mb-4 card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                  </div>
+               </d2v>
+
+               <div class="project-container mb-4 order-md-10 order-lg-9 col-12 col-md-6 col-lg-4">
+                     <p class="m-0 text-center">
+                        <a class="show-more-button" data-toggle="collapse" href="#collapseExample12" role="button" 
+                        aria-expanded="false" aria-controls="collapseExample12"><i class="arrow down"></i></a>
+                     </p>
+               </div>
+               <div class="col-12 order-md-12 order-lg-12 collapse" id="collapseExample12">
+                  <div class="mb-4 card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                  </div>
+               </div> -->
+
+            </div>
+         </div>
       </section>
    </main>
 
@@ -198,7 +327,7 @@
    </footer>
 
    <!--BootStrap JS Scripts -->
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
    <script src="assets/scripts.js"></script>
