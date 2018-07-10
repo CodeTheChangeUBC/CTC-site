@@ -218,3 +218,18 @@ max-height:30px;
 }
 
 
+
+.closeIcon {
+   font-size: 3em;
+   position: absolute;
+   right: 15px;
+   top:0px;
+   padding: 10px 20px;
+}
+.closeIcon:hover {
+   color: $primary;
+}
+
+.padding-right {
+   padding-right: 50px;
+}

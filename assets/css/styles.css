@@ -6731,4 +6731,17 @@ section {
   height: 100vh;
   max-height: 1150px; }
 
+.closeIcon {
+  font-size: 3em;
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  padding: 10px 20px; }
+
+.closeIcon:hover {
+  color: #8EC346; }
+
+.padding-right {
+  padding-right: 50px; }
+
 /*# sourceMappingURL=styles.css.map */
