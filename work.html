@@ -78,7 +78,7 @@
             <p>We believe that software isn't a way to solve social issues in and of itself. Rather, its power is in supporting organizations who already have the relevant expertise in a given area.</p>
             <p>We love to hear from non-profit organizations looking to overcome any sort of obstacle. Please do not hesitate to contact us to discuss how we can help. We look forward to meeting you!</p>
             <h4 class="mb-2 text-secondary">Organizational Partner Form</h4>
-            <form>
+            <form id="partnerForm">
                <div class="form-group">
                   <label for="mission">1. <b>MISSION:</b> Please provide a brief description of your organization’s mission and goals.</label>
                   <textarea class="form-control" id="mission" rows="2" required></textarea>
@@ -110,7 +110,7 @@
                      <input type="text" id="notes" class="form-control" placeholder="Ex. Best time to reach you, website, etc.">
                   </div>
                </div>
-               <button type="submit" class="btn btn-primary text-white mt-2 mb-4 btn-block">
+               <button id="submitPartner" type="submit" class="btn btn-primary text-white mt-2 mb-4 btn-block">
                   <h6 class="m-0">Submit</h6>
                </button>
             </form>
@@ -126,7 +126,7 @@
             <p>We welcome students with a wide variety of skills and faculties. We graciously accept applications all year round. Twice a year (September and January), we will be starting a new set of projects which are expected to take approximately one school term.</p>
             <p>If you would like to participate or if you have any questions at all, please do not hesitate to reach out to us. We look forward to hearing your ideas!</p>
             <h4 class="mb-2 text-secondary">Volunteer Form</h4>
-            <form>
+            <form id="volunteerForm">
                <div class="form-group">
                   <label for="causes">1. What causes are you passionate about?</label>
                   <textarea class="form-control" id="causes" rows="2" required></textarea>
@@ -166,7 +166,7 @@
                      <input type="text" id="notes" class="form-control" placeholder="Ex. Best time to reach you, website, github, etc.">
                   </div>
                </div>
-               <button type="submit" class="btn btn-secondary text-white mt-2 mb-4 btn-block">
+               <button id="submitVolunteer" type="submit" class="btn btn-secondary text-white mt-2 mb-4 btn-block">
                   <h6 class="m-0">Submit</h6>
                </button>
                <h6>Thank you for reaching out to us. We look forward to speaking with you soon.</h6>
@@ -186,9 +186,10 @@
    </footer>
 
    <!--BootStrap JS Scripts -->
+   
    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <script src="assets/scripts.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   <script src="assets/scripts.js"></script>
 </body>
 </html>
