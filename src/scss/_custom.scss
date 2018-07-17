@@ -64,6 +64,7 @@ $font-weight-normal : 400 !default;
 $font-weight-bold : 600 !default;
 
 $font-size-base : 1rem !default;
+$small-font-size : 0.9rem;
 $h1-font-size : $font-size-base * 3 !default;
 $h2-font-size : $font-size-base * 2.5 !default;
 $h3-font-size : $font-size-base * 2 !default;
@@ -93,3 +94,9 @@ $navbar-light-toggler-border-color: rgba($gray-700, 1);
 $btn-padding-y : 8px;
 $btn-padding-x : 16px;
 $border-radius : 3px !default;
+
+//
+// Forms
+//
+
+$input-placeholder-color: $gray-400;

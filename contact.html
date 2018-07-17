@@ -7,20 +7,20 @@
    <!-- Stylesheet -->
    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
-   <title>Contact Us | Code The Change UBC</title>
+   <title>Contact Us | Code the Change UBC</title>
 </head>
 
 <body>
    <nav role="navigation" class="navbar navbar-expand-md navbar-light">
       <div class="container">
          <a class="navbar-brand" href="index.html">
-        <img src="assets/images/logo.gif" width="auto" height="50" alt="ctc_logo">
-      </a>
+            <img src="assets/images/logo.gif" width="auto" height="50" alt="ctc_logo">
+         </a>
          <button id="nav-icon4" class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </button>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+         </button>
 
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav pr-0 pl-3 pl-sm-0 container justify-content-md-end justify-content-start">
@@ -33,14 +33,16 @@
                <li class="nav-item active">
                   <a class="nav-link h6 font-weight-normal mb-0" href="contact.html">Contact Us</a>
                </li>
-               <li class="nav-item">
-                  <div class="col-12">
-                     <p class="text-center text-muted mb-1">
-                        <a class="text-muted" href="https://github.com/CodeTheChangeUBC"><img alt="github" class="headerIcon" src="assets/images/github-small.png"></a> |
-                        <a class="text-muted" href="https://www.linkedin.com/company-beta/18145418/"><img src="assets/images/linkedin-icon.png" alt="linkedin" class="headerIcon"></a> |
-                        <a class="text-muted" href="https://www.facebook.com/codethechangeubc/"><img src="assets/images/fbook-icon.png" alt="facebook" class="headerIcon"></a>
-                     </p>
-                  </div>
+               <li class="nav-item d-inline-flex justify-content-center">
+                  <a class="nav-link px-2 py-1" href="https://github.com/CodeTheChangeUBC">
+                     <img class="social-media-icon" src="assets/images/github-small.png" alt="github">
+                  </a>
+                  <a class="nav-link px-2 py-1" href="https://www.linkedin.com/company-beta/18145418/">
+                     <img class="social-media-icon" src="assets/images/linkedin-icon.png" alt="linkedin">
+                  </a>
+                  <a class="nav-link px-2 py-1" href="https://www.facebook.com/codethechangeubc/">
+                     <img class="social-media-icon" src="assets/images/fbook-icon.png" alt="facebook">
+                  </a>
                </li>
             </ul>
          </div>
@@ -58,67 +60,63 @@
          </div>
       </header>
 
-      <div class="container">
-         <div class="row">
-            <div class="col-12 col-md-6">
-               <div id="volunteerBanner">
-                  <h2 id="volPrompt" class="mb-3 font-weight-light py-4">Interested in working with us?
-                  </h2>
-                  <div class="container px-0">
-                     <div class="row m-0">
-                        <div class="col-12 p-0">
-                           <a href="work.html#partnerInfo" class="w-100 rounded-0 text-white btn btn-primary">
-                              <h5 class="m-0 py-4">Become a Partner</h5>
-                           </a>
-                        </div>
-                        <div class="col-12 p-0">
-                           <a href="work.html#volunteerInfo" class="w-100 rounded-0 text-white btn btn-secondary">
-                              <h5 class="m-0 py-4">Become a Volunteer</h5>
-                           </a>
+      <section>
+         <div class="container">
+            <div class="row flex-column flex-md-row align-items-stretch">
+               <div class="col-12 col-md-6 mb-5 mb-md-0">
+                  <div id="volunteerBanner" class="bg-dark text-white h-100">
+                     <h2 id="volPrompt" class="py-5 text-center">Interested in working with us?
+                     </h2>
+                     <div class="container px-0">
+                        <div class="row m-0">
+                           <div class="col-12 p-0">
+                              <a href="work.html#partnerInfo" class="w-100 rounded-0 text-white btn btn-primary">
+                                 <h5 class="m-0 py-4">Become a Partner</h5>
+                              </a>
+                           </div>
+                           <div class="col-12 p-0">
+                              <a href="work.html#volunteerInfo" class="w-100 rounded-0 text-white btn btn-secondary">
+                                 <h5 class="m-0 py-4">Become a Volunteer</h5>
+                              </a>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-            <div class="col-12 col-md-6">
-               <form id="contactForm">
-                  <h2 class="mb-4 text-secondary">General Inquiries</h2>
-                  <div class="form-group">
-                     <label for="Subject"><b>Subject</b></label>
-                     <textarea class="form-control" id="mission" rows="1" placeholder="Ex. Project Idea" required></textarea>
-                  </div>
-                  <div class="form-row">
-                     <div class="col-12 col-md-6 pb-2">
-                        <label for="name"><b>Your Name</b></label>
-                        <input type="text" id="name" class="form-control" placeholder="Ex. John Doe" required>
+               <div class="col-12 col-md-6">
+                  <form id="contactForm">
+                     <h2 class="mb-4 text-secondary">General Inquiries</h2>
+                     <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input class="form-control" id="subject" type="text" placeholder="Ex. Project Idea" required></input>
                      </div>
-                     <div class="col-12 col-md-6 pb-2">
-                        <label for="email"><b>Email Address</b></label>
-                        <input type="email" id="email" class="form-control" placeholder="Ex. user@example.com" required>
+                     <div class="form-row">
+                        <div class="col-12 col-md-6 pb-2">
+                           <label for="name">Your Name</label>
+                           <input type="text" id="name" class="form-control" placeholder="Ex. John Doe" required>
+                        </div>
+                        <div class="col-12 col-md-6 pb-2">
+                           <label for="email">Email Address</label>
+                           <input type="email" id="email" class="form-control" placeholder="Ex. user@example.com" required>
+                        </div>
                      </div>
-                  </div>
-                  <div class="form-group">
-                     <label for="Contact"><b>Message</b></label><textarea class="form-control" id="contactInfo" rows="4" required></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-secondary text-white mt-2 mb-4 btn-block">
-                  <h6 class="m-0">Submit</h6>
-                  </button>
-               </form>
+                     <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                     </div>
+                     <button type="submit" class="btn btn-secondary text-white mt-2 btn-block">
+                     <h6 class="m-0">Submit</h6>
+                     </button>
+                  </form>
+               </div>
             </div>
          </div>
-      </div>
+      </section>
    </main>
 
    <footer role="contentinfo" class="footer bg-light d-flex align-items-center">
       <div class="container">
          <div class="row">
-            <div class="col-12">
-               <p class="text-center text-muted mb-1">
-                  <a class="text-muted" href="https://github.com/CodeTheChangeUBC"><img alt="github" class="footerIcon" src="assets/images/github-small.png"></a> |
-                  <a class="text-muted" href="https://www.linkedin.com/company-beta/18145418/"><img src="assets/images/linkedin-icon.png" alt="linkedin" class="footerIcon"></a> |
-                  <a class="text-muted" href="https://www.facebook.com/codethechangeubc/"><img src="assets/images/fbook-icon.png" alt="facebook" class="footerIcon"></a>
-               </p>
-            </div>
             <div class="col-12">
                <p class="text-center text-muted m-0 small">&copy; Code the Change UBC 2018</p>
             </div>
@@ -131,5 +129,4 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
 </html>
