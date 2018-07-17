@@ -37,7 +37,7 @@ $(document).on('click', '.workBanner a[href^="#"]', function (event) {
 
 
 
-$('#submitVolunteer').on('click', function (event) {
+$('#volunteerForm').submit(function (event) {
    console.log("Submitting volunteer form");
 
    let vform = document.getElementById("volunteerForm");
@@ -55,23 +55,21 @@ $('#submitVolunteer').on('click', function (event) {
    for (let x = isize; x < (isize + tindex); x++) {
       vanswers[x] = [ta[x - isize].id, ta[x - isize].value];
    }
+      vanswers[vanswers.length]="VOLUNTEER FORM";
+
    fetch('https://aifdsuhx1m.execute-api.us-west-2.amazonaws.com/prod/send-email', {
       method: "POST",
-      body: JSON.stringify({
-         "from": 'codethechangeubc@gmail.com', // sender address
-         "subject": `Form submission`, // Subject line
-         "text": 'form was submitted'
-      }),
+      mode: "no-cors",
+      body: JSON.stringify(vanswers),
       headers: {
          'Accept': 'application/json',
          'Content-Type': 'application/json'
       }
    });
    console.log("submitted");
-
 });
 
-$('#submitPartner').on('click', function (event) {
+$('#partnerForm').submit(function (event) {
    console.log("Submitting partner form");
 
    let pform = document.getElementById("partnerForm");
@@ -82,6 +80,7 @@ $('#submitPartner').on('click', function (event) {
 
 
    let panswers = [];
+   
 
    for (let x = 0; x < pisize; x++) {
       panswers[x] = [pinput[x].id, pinput[x].value];
@@ -89,18 +88,52 @@ $('#submitPartner').on('click', function (event) {
    for (let x = pisize; x < (pisize + ptindex); x++) {
       panswers[x] = [pta[x - pisize].id, pta[x - pisize].value];
    }
-
+   
+   panswers[panswers.length]="PARTNER FORM";
+   
    fetch('https://aifdsuhx1m.execute-api.us-west-2.amazonaws.com/prod/send-email', {
       method: "POST",
-      body: JSON.stringify({
-         "text": 'form was submitted',
-         "body": 'This is a sample form submission'
-      }),
+      mode: "no-cors",
+      body: JSON.stringify(panswers),
       headers: {
          'Accept': 'application/json',
          'Content-Type': 'application/json'
       }
    });
+   console.log(JSON.stringify(panswers));
 
 
+});
+
+$('#contactForm').submit(function (event) {
+   event.preventDefault();
+   console.log("submitting contact form");
+   
+   let cform = document.getElementById("contactForm");
+   let cta = cform.getElementsByTagName("textarea");
+   let ctindex = cta.length;
+   let cinput = cform.getElementsByTagName("input");
+   let cisize = cinput.length;
+
+
+   let canswers = [];
+   
+
+   for (let x = 0; x < cisize; x++) {
+      canswers[x] = [cinput[x].id, cinput[x].value];
+   }
+   for (let x = cisize; x < (cisize + ctindex); x++) {
+      canswers[x] = [cta[x - cisize].id, cta[x - cisize].value];
+   }
+   
+   fetch('https://aifdsuhx1m.execute-api.us-west-2.amazonaws.com/prod/send-email', {
+      method: "POST",
+      mode: "no-cors",
+      body: JSON.stringify(canswers),
+      headers: {
+         'Accept': 'application/json',
+         'Content-Type': 'application/json'
+      }
+   });
+   console.log(JSON.stringify(canswers));
 });

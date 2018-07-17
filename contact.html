@@ -84,8 +84,8 @@
                   </div>
                </div>
                <div class="col-12 col-md-6">
-                  <form id="contactForm" action="https://formspree.io/codethechangeubc@gmail.com" method="post">
-                     <h2 class="mb-4 text-secondary">General Inquiries</h2>
+               <h2 class="mb-4 text-secondary">General Inquiries</h2>
+                  <form id="contactForm">
                      <div class="form-group">
                         <label for="subject">Subject</label>
                         <input class="form-control" id="subject" type="text" placeholder="Ex. Project Idea" required>
@@ -104,10 +104,9 @@
                         <label for="message">Message</label>
                         <textarea class="form-control" id="message" rows="4" required></textarea>
                      </div>
-                     <input type="submit" value="Send">
-                     <button type="submit" class="btn btn-secondary text-white mt-2 btn-block">
-                     <h6 class="m-0">Submit</h6>
-                     </button>
+               <button id="submitContact" type="submit" class="btn btn-primary text-white mt-2 mb-4 btn-block">
+                  <h6 class="m-0">Submit</h6>
+               </button>
                   </form>
                </div>
             </div>
@@ -129,6 +128,8 @@
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script src="assets/scripts.js"></script>
+
 </body>
 
 </html>
