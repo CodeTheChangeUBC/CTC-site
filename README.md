@@ -2,7 +2,7 @@
 Code The Change UBC site
 
 ## Styling
-1. Install SASS. ```brew install --devel sass/sass/sass```
+1. Install SASS. ```brew install sass```
 2. Run ```sass --watch src/scss:assets/css``` to compile scss into css
 3. Add custom styles to src/scss/styles.scss
 
