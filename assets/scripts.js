@@ -1,4 +1,7 @@
-$(document).on('click', 'a[href^="#"]', function (event) {
+
+let act = 0;
+
+$(document).on('click', '#projectsList a[href^="#"]', function (event) {
    if (act == 0) {
       act = $($.attr(this, 'href'));
       console.log(act);
@@ -38,6 +41,8 @@ $(document).on('click', '.workBanner a[href^="#"]', function (event) {
 
 
 $('#volunteerForm').submit(function (event) {
+      event.preventDefault();
+
    console.log("Submitting volunteer form");
 
    let vform = document.getElementById("volunteerForm");
@@ -67,9 +72,17 @@ $('#volunteerForm').submit(function (event) {
       }
    });
    console.log("submitted");
+   
+      $('#volunteerAlert').addClass("d-block");
+   $('html, body').animate({
+         scrollTop: $('#volunteerInfo').offset().top
+      }, 500);
+   
+   
 });
 
 $('#partnerForm').submit(function (event) {
+   event.preventDefault();
    console.log("Submitting partner form");
 
    let pform = document.getElementById("partnerForm");
@@ -100,6 +113,11 @@ $('#partnerForm').submit(function (event) {
          'Content-Type': 'application/json'
       }
    });
+   
+   $('#partnerAlert').addClass("d-block");
+   $('html, body').animate({
+         scrollTop: $('#partnerInfo').offset().top
+      }, 500);
    console.log(JSON.stringify(panswers));
 
 
@@ -135,5 +153,11 @@ $('#contactForm').submit(function (event) {
          'Content-Type': 'application/json'
       }
    });
+   
+         $('#contactAlert').addClass("d-block");
+   $('html, body').animate({
+         scrollTop: $('#contactAlert').offset().top
+      }, 500);
+   
    console.log(JSON.stringify(canswers));
 });

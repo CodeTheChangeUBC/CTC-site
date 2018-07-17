@@ -2979,23 +2979,23 @@ tbody.collapse.show {
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
     color: #fff; }
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.9); }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-    color: rgba(255, 255, 255, 0.75); }
+    color: white; }
   .navbar-dark .navbar-nav .nav-link.disabled {
-    color: rgba(255, 255, 255, 0.25); }
+    color: rgba(255, 255, 255, 0.7); }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff; }
 .navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   border-color: rgba(255, 255, 255, 0.1); }
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 .navbar-dark .navbar-text {
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.9); }
   .navbar-dark .navbar-text a {
     color: #fff; }
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
@@ -6491,6 +6491,12 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
+.navbar-light ul li.nav-item a:before {
+  background: #203864; }
+
+.navbar-dark ul li.nav-item a:before {
+  background: #fff; }
+
 .navbar ul li.nav-item.active a:before {
   opacity: 1;
   transform: scaleX(1); }
@@ -6505,7 +6511,6 @@ a.text-dark:hover, a.text-dark:focus {
   bottom: -30px;
   height: 2px;
   border-radius: 4px;
-  background: #203864;
   opacity: 0;
   transform: scaleX(0); }
 
@@ -6684,7 +6689,7 @@ section {
   background-position: center center;
   background-size: cover;
   border-radius: 10px;
-  border: 5px solid #D9DADD;
+  border: 5px solid #203864;
   box-sizing: border-box;
   overflow: visible; }
   .project-container .project-image:before {
@@ -6726,10 +6731,11 @@ section {
   max-height: 30px; }
 
 .workBanner {
-  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 30%), url("../images/ubcfountain.jpg");
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 30%), url("../images/ubcfountain_edit.jpg");
   min-height: 480px;
   height: 100vh;
-  max-height: 1150px; }
+  max-height: 1150px;
+  background-position: center bottom; }
 
 .closeIcon {
   font-size: 3em;
@@ -6743,5 +6749,8 @@ section {
 
 .padding-right {
   padding-right: 50px; }
+
+.cbanner {
+  background-image: url("../../assets/images/pharmubc.jpg"); }
 
 /*# sourceMappingURL=styles.css.map */

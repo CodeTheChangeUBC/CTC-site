@@ -140,7 +140,7 @@ section {
       background-position: center center;
       background-size: cover;
       border-radius: 10px;
-      border: 5px solid $light;
+      border: 5px solid $secondary;
       box-sizing: border-box;
       overflow: visible;
 
@@ -211,10 +211,11 @@ max-height:30px;
 
 // work with us page
 .workBanner {
-   background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url('../images/ubcfountain.jpg');
+   background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url('../images/ubcfountain_edit.jpg');
    min-height:480px;
    height: 100vh;
    max-height: 1150px;
+   background-position: center bottom;
 }
 
 
@@ -233,3 +234,19 @@ max-height:30px;
 .padding-right {
    padding-right: 50px;
 }
+
+
+
+.tertiary-header-image {
+   
+}
+
+.tertiary-header-image {
+   
+}
+
+.cbanner {
+   background-image:url("../../assets/images/pharmubc.jpg");
+}
+
+

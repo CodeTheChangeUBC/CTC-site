@@ -1,6 +1,18 @@
 // Navbar
 
 // Page Underline
+.navbar-light {
+   ul li.nav-item a:before {
+      background: $secondary;
+   }
+}
+
+.navbar-dark {
+   ul li.nav-item a:before {
+      background: $white;
+   }
+}
+
 .navbar {
   ul {
     li.nav-item {
@@ -28,7 +40,6 @@
           bottom: -30px;
           height: 2px;
           border-radius: 4px;
-          background: $secondary;
           opacity: 0;
           transform: scaleX(0);
         }
