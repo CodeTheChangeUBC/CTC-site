@@ -55,6 +55,16 @@
 
 // Mobile Navbar
 @include media-breakpoint-down(sm) {
+   .navbar-dark {
+      .navbar-collapse {
+         background-color: $secondary;
+      }
+   }
+   .navbar-light {
+      .navbar-collapse {
+         background-color: $white;
+      }
+   }
   .navbar {
     .navbar-brand,
     .navbar-toggler {
@@ -66,7 +76,6 @@
       right: 0;
       top: 0;
       z-index: 9998;
-      background-color: white;
     }
     ul {
       height: 100vh;

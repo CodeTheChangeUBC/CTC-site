@@ -1,5 +1,9 @@
-
 let act = 0;
+
+$(window).on('resize', function (event) {
+   console.log("resize");
+   $('#navbarSupportedContent.show').collapse('toggle');
+});
 
 $(document).on('click', '#projectsList a[href^="#"]', function (event) {
    if (act == 0) {
@@ -41,7 +45,7 @@ $(document).on('click', '.workBanner a[href^="#"]', function (event) {
 
 
 $('#volunteerForm').submit(function (event) {
-      event.preventDefault();
+   event.preventDefault();
 
    console.log("Submitting volunteer form");
 
@@ -60,7 +64,7 @@ $('#volunteerForm').submit(function (event) {
    for (let x = isize; x < (isize + tindex); x++) {
       vanswers[x] = [ta[x - isize].id, ta[x - isize].value];
    }
-      vanswers[vanswers.length]="VOLUNTEER FORM";
+   vanswers[vanswers.length] = "VOLUNTEER FORM";
 
    fetch('https://aifdsuhx1m.execute-api.us-west-2.amazonaws.com/prod/send-email', {
       method: "POST",
@@ -72,13 +76,13 @@ $('#volunteerForm').submit(function (event) {
       }
    });
    console.log("submitted");
-   
-      $('#volunteerAlert').addClass("d-block");
+
+   $('#volunteerAlert').addClass("d-block");
    $('html, body').animate({
-         scrollTop: $('#volunteerInfo').offset().top
-      }, 500);
-   
-   
+      scrollTop: $('#volunteerInfo').offset().top
+   }, 500);
+
+
 });
 
 $('#partnerForm').submit(function (event) {
@@ -93,7 +97,7 @@ $('#partnerForm').submit(function (event) {
 
 
    let panswers = [];
-   
+
 
    for (let x = 0; x < pisize; x++) {
       panswers[x] = [pinput[x].id, pinput[x].value];
@@ -101,9 +105,9 @@ $('#partnerForm').submit(function (event) {
    for (let x = pisize; x < (pisize + ptindex); x++) {
       panswers[x] = [pta[x - pisize].id, pta[x - pisize].value];
    }
-   
-   panswers[panswers.length]="PARTNER FORM";
-   
+
+   panswers[panswers.length] = "PARTNER FORM";
+
    fetch('https://aifdsuhx1m.execute-api.us-west-2.amazonaws.com/prod/send-email', {
       method: "POST",
       mode: "no-cors",
@@ -113,11 +117,11 @@ $('#partnerForm').submit(function (event) {
          'Content-Type': 'application/json'
       }
    });
-   
+
    $('#partnerAlert').addClass("d-block");
    $('html, body').animate({
-         scrollTop: $('#partnerInfo').offset().top
-      }, 500);
+      scrollTop: $('#partnerInfo').offset().top
+   }, 500);
    console.log(JSON.stringify(panswers));
 
 
@@ -126,7 +130,7 @@ $('#partnerForm').submit(function (event) {
 $('#contactForm').submit(function (event) {
    event.preventDefault();
    console.log("submitting contact form");
-   
+
    let cform = document.getElementById("contactForm");
    let cta = cform.getElementsByTagName("textarea");
    let ctindex = cta.length;
@@ -135,7 +139,7 @@ $('#contactForm').submit(function (event) {
 
 
    let canswers = [];
-   
+
 
    for (let x = 0; x < cisize; x++) {
       canswers[x] = [cinput[x].id, cinput[x].value];
@@ -143,7 +147,7 @@ $('#contactForm').submit(function (event) {
    for (let x = cisize; x < (cisize + ctindex); x++) {
       canswers[x] = [cta[x - cisize].id, cta[x - cisize].value];
    }
-   
+
    fetch('https://aifdsuhx1m.execute-api.us-west-2.amazonaws.com/prod/send-email', {
       method: "POST",
       mode: "no-cors",
@@ -153,11 +157,11 @@ $('#contactForm').submit(function (event) {
          'Content-Type': 'application/json'
       }
    });
-   
-         $('#contactAlert').addClass("d-block");
+
+   $('#contactAlert').addClass("d-block");
    $('html, body').animate({
-         scrollTop: $('#contactAlert').offset().top
-      }, 500);
-   
+      scrollTop: $('#contactAlert').offset().top
+   }, 500);
+
    console.log(JSON.stringify(canswers));
 });
