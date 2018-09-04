@@ -54,7 +54,7 @@ h6, .h6 {
 }
 
 .title {
-  font-weight: 600 !important;
+  font-weight: 400 !important;
 }
 
 // buttons
@@ -64,19 +64,34 @@ button, .btn {
   }
 }
 
-// header image
+.btn-outline-primary:hover {
+  color: white !important;
+}
+
+// header images
 .header-image {
-  height: 600px;
+  height: 100vh !important;
   @include media-breakpoint-up(sm) { height: 650px; }
   @include media-breakpoint-up(md) { height: 700px; }
   @include media-breakpoint-up(lg) { height: 750px; }
   @include media-breakpoint-up(xl) { height: 800px; }
-  margin-top: -76px;
-  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/ubcclocktower.jpg");
+  margin-top: -101px;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center top;
   background-size: cover;
+}
+
+#home-image, #contact-image {
+  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/ubcclocktower.jpg");
+}
+
+#projects-image {
+  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/ubcmainmall.jpg");
+}
+
+#work-image {
+  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/ubcfountain.jpg");
 }
 
 // sticky footer
@@ -118,9 +133,9 @@ section {
 
 // home page
 #projectBanner{
-  background-image: linear-gradient(rgba($black, 0.15), rgba($black, 0.15)), url("../images/ubcmainmall.jpg");
+  background-image: linear-gradient(rgba($black, 0.15), rgba($black, 0.15)), url("../images/code.jpg");
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center top;
   background-size: cover;
 }
@@ -201,7 +216,7 @@ section {
 //       border-width: 0 3px 3px 0;
 //       display: inline-block;
 //       padding: 6px;
-
+//
 //       &.down {
 //          transform: rotate(45deg);
 //          -webkit-transform: rotate(45deg);
@@ -221,8 +236,6 @@ max-height:30px;
    max-height: 1150px;
 }
 
-
-
 .closeIcon {
    font-size: 3em;
    position: absolute;
@@ -232,6 +245,7 @@ max-height:30px;
 }
 .closeIcon:hover {
    color: $primary;
+   cursor: pointer;
 }
 
 .padding-right {

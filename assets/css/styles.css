@@ -427,7 +427,8 @@ hr {
 small,
 .small {
   font-size: 0.9rem;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 mark,
 .mark {
@@ -1784,22 +1785,27 @@ pre code {
   background-clip: padding-box;
   border: 1px solid #BDC0C6;
   border-radius: 3px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-  .form-control::-ms-expand {
-    background-color: transparent;
-    border: 0; }
-  .form-control:focus {
-    color: #565A61;
-    background-color: #fff;
-    border-color: #c9e2a6;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(142, 195, 70, 0.25); }
-  .form-control::placeholder {
-    color: #BDC0C6;
-    opacity: 1; }
-  .form-control:disabled, .form-control[readonly] {
-    background-color: #D9DADD;
-    opacity: 1; }
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+.form-control:focus {
+  color: #565A61;
+  background-color: #fff;
+  border-color: #c9e2a6;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(142, 195, 70, 0.25);
+}
+.form-control::placeholder {
+  color: #BDC0C6;
+  opacity: 1;
+}
+.form-control:disabled, .form-control[readonly] {
+  background-color: #D9DADD;
+  opacity: 1;
+}
 
 select.form-control:not([size]):not([multiple]) {
   height: calc(2.25rem + 2px);
@@ -1957,7 +1963,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   width: 100%;
   margin-top: 0.25rem;
   font-size: 0.9rem;
-  color: #8EC346; }
+  color: #8EC346;
+}
 
 .valid-tooltip {
   position: absolute;
@@ -2042,7 +2049,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   width: 100%;
   margin-top: 0.25rem;
   font-size: 0.9rem;
-  color: #dc3545; }
+  color: #dc3545;
+}
 
 .invalid-tooltip {
   position: absolute;
@@ -8223,14 +8231,18 @@ h3 {
   }
 
   .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #ddd !important; } }
+.table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+}
 .navbar ul li.nav-item.active a:before {
   opacity: 1;
-  transform: scaleX(1); }
+  transform: scaleX(1);
+}
 .navbar ul li.nav-item a:hover:before, .navbar ul li.nav-item a:focus:before {
   opacity: 1;
-  transform: scaleX(1); }
+  transform: scaleX(1);
+}
 .navbar ul li.nav-item a:before {
   transition: all 200ms ease-in-out;
   content: "";
@@ -8241,10 +8253,12 @@ h3 {
   border-radius: 4px;
   background: #203864;
   opacity: 0;
-  transform: scaleX(0); }
+  transform: scaleX(0);
+}
 
 .social-media-icon {
-  height: 1.25rem; }
+  height: 1.25rem;
+}
 
 @media (max-width: 767.98px) {
   .navbar .navbar-brand,
@@ -8328,7 +8342,8 @@ body {
 }
 
 a:hover {
-  transition: all 200ms ease-in-out; }
+  transition: all 200ms ease-in-out;
+}
 
 h1, .h1 {
   font-weight: 200;
@@ -8361,33 +8376,57 @@ h6, .h6 {
 }
 
 .title {
-  font-weight: 600 !important;
+  font-weight: 400 !important;
 }
 
 button:focus, .btn:focus {
   outline: 0;
 }
 
+.btn-outline-primary:hover {
+  color: white !important;
+}
+
 .header-image {
-  height: 600px;
-  margin-top: -76px;
-  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 15%), url("../images/ubcclocktower.jpg");
+  height: 100vh !important;
+  margin-top: -101px;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center top;
-  background-size: cover; }
-  @media (min-width: 576px) {
-    .header-image {
-      height: 650px; } }
-  @media (min-width: 768px) {
-    .header-image {
-      height: 700px; } }
-  @media (min-width: 992px) {
-    .header-image {
-      height: 750px; } }
-  @media (min-width: 1200px) {
-    .header-image {
-      height: 800px; } }
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  .header-image {
+    height: 650px;
+  }
+}
+@media (min-width: 768px) {
+  .header-image {
+    height: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .header-image {
+    height: 750px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-image {
+    height: 800px;
+  }
+}
+
+#home-image, #contact-image {
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 15%), url("../images/ubcclocktower.jpg");
+}
+
+#projects-image {
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 15%), url("../images/ubcmainmall.jpg");
+}
+
+#work-image {
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 15%), url("../images/ubcfountain.jpg");
+}
 
 html {
   position: relative;
@@ -8416,24 +8455,33 @@ section {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
-  background-size: cover; }
-  @media (min-width: 576px) {
-    .secondary-header-image {
-      height: 325px; } }
-  @media (min-width: 768px) {
-    .secondary-header-image {
-      height: 350px; } }
-  @media (min-width: 992px) {
-    .secondary-header-image {
-      height: 375px; } }
-  @media (min-width: 1200px) {
-    .secondary-header-image {
-      height: 400px; } }
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  .secondary-header-image {
+    height: 325px;
+  }
+}
+@media (min-width: 768px) {
+  .secondary-header-image {
+    height: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .secondary-header-image {
+    height: 375px;
+  }
+}
+@media (min-width: 1200px) {
+  .secondary-header-image {
+    height: 400px;
+  }
+}
 
 #projectBanner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/ubcmainmall.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/code.jpg");
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center top;
   background-size: cover;
 }
@@ -8457,41 +8505,47 @@ section {
   border-radius: 10px;
   border: 5px solid #D9DADD;
   box-sizing: border-box;
-  overflow: visible; }
-  .project-container .project-image:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-    position: relative;
-    background: rgba(255, 255, 255, 0.75);
-    opacity: 0; }
-  .project-container .project-image:after {
-    content: "Learn More";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    color: #203864;
-    font-size: 2rem;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0; }
-  .project-container .project-image:hover:before {
-    opacity: 1;
-    transition: all 200ms ease-in-out; }
-  .project-container .project-image:hover:after {
-    opacity: 1;
-    transition: all 200ms ease-in-out; }
-  .project-container .project-image .project-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 5px; }
+  overflow: visible;
+}
+.project-container .project-image:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.75);
+  opacity: 0;
+}
+.project-container .project-image:after {
+  content: "Learn More";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  color: #203864;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.project-container .project-image:hover:before {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+.project-container .project-image:hover:after {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+.project-container .project-image .project-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
 
 .gitLink {
   max-height: 30px;
@@ -8501,19 +8555,24 @@ section {
   background-image: linear-gradient(white, rgba(255, 255, 255, 0) 30%), url("../images/ubcfountain.jpg");
   min-height: 480px;
   height: 100vh;
-  max-height: 1150px; }
+  max-height: 1150px;
+}
 
 .closeIcon {
   font-size: 3em;
   position: absolute;
   right: 15px;
   top: 0px;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+}
 
 .closeIcon:hover {
-  color: #8EC346; }
+  color: #8EC346;
+  cursor: pointer;
+}
 
 .padding-right {
-  padding-right: 50px; }
+  padding-right: 50px;
+}
 
 /*# sourceMappingURL=styles.css.map */
