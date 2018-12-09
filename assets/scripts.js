@@ -2,11 +2,8 @@
 // Scripts
 //
 
-
-// projects page
-
+// Projects
 let act = 0;
-
 
 $(document).on('click', 'a[href^="#"]', function (event) {
    if (act == 0) {
@@ -16,19 +13,14 @@ $(document).on('click', 'a[href^="#"]', function (event) {
          scrollTop: $($.attr(this, 'href')).offset().top -= 100
       }, 500);
    }
-
 });
 
-
 $('.show-more-button').on('click', function (event) {
-
    if (act != 0) {
       $('.collapse.show').collapse('toggle');
    }
    $('.collapse.show').collapse('toggle');
 });
-
-
 
 $('.closeIcon').on('click', function () {
    $('.collapse.show').collapse('toggle');
@@ -36,7 +28,7 @@ $('.closeIcon').on('click', function () {
 });
 
 // Contact Us Form
-$(document).on('submit', '#contactForm', function (event) {
+$(document).on('submit', '#contact-form', function (event) {
   let thankYou = $(".thank-you");
   thankYou.show();
   thankYou.fadeOut(15000);
@@ -55,18 +47,8 @@ $(document).on('submit', '#partner-form', function (event) {
   });
 });
 
-// Volunteer With Us Form
-$(document).on('submit', '#volunteer-form', function (event) {
-  let thankYou = $(".thank-you");
-  thankYou.show();
-  thankYou.fadeOut(15000);
-  return window.submitGoogleForm(this, function() {
-    $("#volunteer-form")[0].reset();
-  });
-});
-
 // smooth scroll
-// WORK Banner
+// Work Banner
 $(document).on('click', '.workBanner a[href^="#"]', function (event) {
    $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top

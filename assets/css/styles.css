@@ -8391,33 +8391,47 @@ button:focus, .btn:focus {
   height: 100vh !important;
   margin-top: -101px;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  background-position: center bottom;
 }
 @media (min-width: 576px) {
   .header-image {
     height: 650px;
+    background-attachment: scroll;
   }
 }
 @media (min-width: 768px) {
   .header-image {
     height: 700px;
+    background-attachment: fixed;
   }
 }
 @media (min-width: 992px) {
   .header-image {
     height: 750px;
+    background-attachment: fixed;
   }
 }
 @media (min-width: 1200px) {
   .header-image {
     height: 800px;
+    background-attachment: fixed;
   }
 }
 
-#home-image, #contact-image {
+#home-image {
   background-image: linear-gradient(white, rgba(255, 255, 255, 0) 15%), url("../images/ubcclocktower.jpg");
+}
+
+#team-image {
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 15%), url("../images/ubcfountain2.jpg");
+}
+
+#contact-image {
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 15%), url("../images/pharmubc.jpg");
 }
 
 #projects-image {
@@ -8448,42 +8462,31 @@ section {
   padding: 50px 0px;
 }
 
-.secondary-header-image {
-  height: 300px;
-  margin-top: -76px;
-  background-image: linear-gradient(white, rgba(255, 255, 255, 0) 30%), url("../images/ubcmainmall.jpg");
+#projectBanner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/code.jpg");
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-position: center top;
   background-size: cover;
 }
 @media (min-width: 576px) {
-  .secondary-header-image {
-    height: 325px;
+  #projectBanner {
+    background-attachment: scroll;
   }
 }
 @media (min-width: 768px) {
-  .secondary-header-image {
-    height: 350px;
+  #projectBanner {
+    background-attachment: fixed;
   }
 }
 @media (min-width: 992px) {
-  .secondary-header-image {
-    height: 375px;
+  #projectBanner {
+    background-attachment: fixed;
   }
 }
 @media (min-width: 1200px) {
-  .secondary-header-image {
-    height: 400px;
+  #projectBanner {
+    background-attachment: fixed;
   }
-}
-
-#projectBanner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/code.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
-  background-size: cover;
 }
 
 @media (max-width: 767.98px) {

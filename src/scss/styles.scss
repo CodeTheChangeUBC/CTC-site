@@ -71,19 +71,29 @@ button, .btn {
 // header images
 .header-image {
   height: 100vh !important;
-  @include media-breakpoint-up(sm) { height: 650px; }
-  @include media-breakpoint-up(md) { height: 700px; }
-  @include media-breakpoint-up(lg) { height: 750px; }
-  @include media-breakpoint-up(xl) { height: 800px; }
+  @include media-breakpoint-up(sm) { height: 650px; background-attachment: scroll; }
+  @include media-breakpoint-up(md) { height: 700px; background-attachment: fixed; }
+  @include media-breakpoint-up(lg) { height: 750px; background-attachment: fixed; }
+  @include media-breakpoint-up(xl) { height: 800px; background-attachment: fixed; }
   margin-top: -101px;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  background-position: center bottom;
 }
 
-#home-image, #contact-image {
+#home-image {
   background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/ubcclocktower.jpg");
+}
+
+#team-image {
+  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/ubcfountain2.jpg");
+}
+
+#contact-image {
+  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/pharmubc.jpg");
 }
 
 #projects-image {
@@ -117,25 +127,14 @@ section {
   padding: 50px 0px;
 }
 
-.secondary-header-image {
-  height: 300px;
-  @include media-breakpoint-up(sm) { height: 325px; }
-  @include media-breakpoint-up(md) { height: 350px; }
-  @include media-breakpoint-up(lg) { height: 375px; }
-  @include media-breakpoint-up(xl) { height: 400px; }
-  margin-top: -76px;
-  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url("../images/ubcmainmall.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center top;
-  background-size: cover;
-}
-
 // home page
 #projectBanner{
   background-image: linear-gradient(rgba($black, 0.15), rgba($black, 0.15)), url("../images/code.jpg");
+  @include media-breakpoint-up(sm) { background-attachment: scroll; }
+  @include media-breakpoint-up(md) { background-attachment: fixed; }
+  @include media-breakpoint-up(lg) { background-attachment: fixed; }
+  @include media-breakpoint-up(xl) { background-attachment: fixed; }
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center top;
   background-size: cover;
 }
@@ -210,25 +209,11 @@ section {
    }
 }
 
-// i {
-//    &.arrow {
-//       border: solid $white;
-//       border-width: 0 3px 3px 0;
-//       display: inline-block;
-//       padding: 6px;
-//
-//       &.down {
-//          transform: rotate(45deg);
-//          -webkit-transform: rotate(45deg);
-//       }
-//    }
-// }
-
 .gitLink {
 max-height:30px;
 }
 
-// work with us page
+// Work With Us
 .workBanner {
    background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url('../images/ubcfountain.jpg');
    min-height:480px;
