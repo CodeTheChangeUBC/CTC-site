@@ -33,7 +33,7 @@ $(document).on('submit', '#contact-form', function (event) {
   thankYou.show();
   thankYou.fadeOut(15000);
   return window.submitGoogleForm(this, function() {
-    $("#contactForm")[0].reset();
+    $("#contact-form")[0].reset();
   });
 });
 
