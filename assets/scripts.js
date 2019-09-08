@@ -46,11 +46,3 @@ $(document).on('submit', '#partner-form', function (event) {
     $("#partner-form")[0].reset();
   });
 });
-
-// smooth scroll
-// Work Banner
-$(document).on('click', '.workBanner a[href^="#"]', function (event) {
-   $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-   }, 500);
-});
