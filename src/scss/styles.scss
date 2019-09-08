@@ -9,12 +9,16 @@ html {
   @include media-breakpoint-up(md) {font-size: 16px;}
   @include media-breakpoint-up(lg) {font-size: 17px;}
   @include media-breakpoint-up(xl) {font-size: 18px;}
+  // sticky footer
+  position: relative;
+  min-height: 100%;
 }
 
 body {
   //Fix Fonts on Different Browsers
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 100px;
 }
 
 a {
@@ -53,11 +57,13 @@ h6, .h6 {
   letter-spacing: 0.75px;
 }
 
-.title {
-  font-weight: 400 !important;
+.title, .subtitle {
+  font-weight: $font-weight-bold;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black;
 }
 
-// buttons
+// Buttons
 button, .btn {
   &:focus {
     outline: 0;
@@ -68,7 +74,7 @@ button, .btn {
   color: white !important;
 }
 
-// header images
+// Banners
 .header-image {
   height: 100vh !important;
   @include media-breakpoint-up(sm) { height: 650px; background-attachment: scroll; }
@@ -100,18 +106,12 @@ button, .btn {
   background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/ubcmainmall.jpg");
 }
 
-#work-image {
+#partner-image {
   background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/ubcfountain.jpg");
 }
 
-// sticky footer
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 100px;
+#volunteer-image {
+  background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 15%), url("../images/ubc-courtyard.jpg");
 }
 
 footer {
@@ -121,14 +121,12 @@ footer {
   height: 75px;
 }
 
-// Sections
-
 section {
   padding: 50px 0px;
 }
 
-// home page
-#projectBanner{
+// Homepage
+#projectBanner {
   background-image: linear-gradient(rgba($black, 0.15), rgba($black, 0.15)), url("../images/code.jpg");
   @include media-breakpoint-up(sm) { background-attachment: scroll; }
   @include media-breakpoint-up(md) { background-attachment: fixed; }
@@ -145,7 +143,7 @@ section {
   }
 }
 
-// projects page
+// Projects
 .project-container {
    .project-image {
       position: relative;
@@ -209,30 +207,46 @@ section {
    }
 }
 
-.gitLink {
-max-height:30px;
-}
-
-// Work With Us
-.workBanner {
-   background-image: linear-gradient(rgba($white, 1), rgba($white, 0) 30%), url('../images/ubcfountain.jpg');
-   min-height:480px;
-   height: 100vh;
-   max-height: 1150px;
-}
-
 .closeIcon {
    font-size: 3em;
    position: absolute;
    right: 15px;
-   top:0px;
+   top: 0;
    padding: 10px 20px;
-}
-.closeIcon:hover {
-   color: $primary;
-   cursor: pointer;
+
+   &:hover {
+    color: $primary;
+    cursor: pointer;
+   }
 }
 
-.padding-right {
-   padding-right: 50px;
+// Volunteer
+.table-borderless td, .table-borderless th {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.job-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.ios-icon {
+  background-image: url("../images/icons/ios.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ios-android-icon {
+  background-image: url("../images/icons/ios-android.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+}
+
+.computer-icon {
+  background-image: url("../images/icons/frontend-backend.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
