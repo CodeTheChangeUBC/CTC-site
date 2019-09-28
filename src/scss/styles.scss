@@ -21,6 +21,10 @@ body {
   margin-bottom: 100px;
 }
 
+.text-secondary {
+  color: $dark-blue !important;
+}
+
 a {
   &:hover {
     transition: all 200ms ease-in-out;
@@ -176,7 +180,7 @@ section {
          right: 0;
          bottom: 0;
          top: 0;
-         color: $secondary;
+         color: $dark-blue;
          font-size: 2rem;
          font-weight: $font-weight-normal;
          display: flex;

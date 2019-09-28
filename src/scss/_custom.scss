@@ -29,8 +29,13 @@ $green:   #8EC346 !default;
 $teal:    #8EC346 !default;
 $cyan:    #203864 !default;
 
-$primary:       $green !default;
-$secondary:     $blue !default;
+// Rebrand
+$dark-blue:     #133AB9 !default;
+$pastel-purple: #9B8BF2 !default;
+$light-blue:    #71ABFF !default;
+
+$primary:       $pastel-purple !default;
+$secondary:     $light-blue !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -82,8 +87,8 @@ $display4-weight : 200 !default;
 //
 
 $navbar-light-color:                rgba($gray-900, 0.7);
-$navbar-light-hover-color:          rgba($secondary, 1);
-$navbar-light-active-color:         rgba($secondary, 1);
+$navbar-light-hover-color:          rgba($dark-blue, 1);
+$navbar-light-active-color:         rgba($dark-blue, 1);
 $navbar-light-disabled-color:       rgba($gray-900, .4);
 $navbar-light-toggler-border-color: rgba($gray-700, 1);
 
